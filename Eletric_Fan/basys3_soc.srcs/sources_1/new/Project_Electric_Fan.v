@@ -95,6 +95,7 @@ module power_cntr (
     parameter THIRD_SPEED = 4'b1000;
     
     // Declare state, next_state value
+    reg duty_enable;
     reg [3:0] speed_state, speed_next_state;
     
     // 언제 다음 state로 넘어가는가?
@@ -155,8 +156,8 @@ module power_cntr (
     clock_div_1000 sec_clk(.clk(clk), .reset_p(reset_p), .clk_source(clk_1msec), .clk_div_1000_nedge(clk_1sec));
 
     // Motor Run Enable variable Setting
-    reg timer_enable;
-    reg [3:0] timer_setting;
+    reg timer_enable;  
+    reg [3:0] next_timer_setting;
 
     // Declare Parameter
     parameter SETTING_0SEC = 4'd0;
@@ -169,7 +170,7 @@ module power_cntr (
     
     // 언제 다음 state로 넘어가는가?
     always @(posedge clk or posedge reset_p) begin
-        if(reset_p) timer_state = SETTING_0SEC;
+        if(reset_p) timer_state = SETTING_0SEC;  
         else if(btn_timer_enable) timer_state = timer_next_state;
     end
     
@@ -183,35 +184,35 @@ module power_cntr (
             case (timer_state)
                 // 0단계 : Turn off electric fan
                 SETTING_0SEC : begin
-                    timer_setting = 4'd0;
+                    next_timer_setting = 4'd5;
                     timer_next_state = SETTING_5SEC;
                     timer_enable = 0;
                 end    
             
                 // 1단계 : Setting Timer 5sec
                 SETTING_5SEC : begin
-                    timer_setting = 4'd5;
+                    next_timer_setting = 4'd10;
                     timer_next_state = SETTING_10SEC;
                     timer_enable = 1;
                 end
             
                 // 2단계 : Setting Timer 10sec
                 SETTING_10SEC : begin
-                    timer_setting = 4'd10;
+                    next_timer_setting = 4'd15;
                     timer_next_state = SETTING_15SEC;
                     timer_enable = 1;
                 end
             
                 // 3단계 : Setting Timer 15sec
                 SETTING_15SEC : begin
-                    timer_setting = 'd15;
+                    next_timer_setting = 4'd0;
                     timer_next_state = SETTING_0SEC;
                     timer_enable = 1;
                 end
                
                 // Default case 
                 default : begin
-                    timer_setting = timer_setting;
+                    next_timer_setting = next_timer_setting;
                     timer_next_state = timer_next_state;
                     timer_enable = timer_enable;
                 end  
@@ -222,10 +223,9 @@ module power_cntr (
     
     // Down Counting of Timer
     reg [3:0] timer;
-    reg duty_enable;
     always @(posedge clk or posedge reset_p) begin
         if(reset_p) begin timer = 0; duty_enable = 1; end
-        else if(btn_timer_enable) timer = timer_setting;
+        else if(btn_timer_enable) timer = next_timer_setting;
         else if(clk_1sec && timer_enable && timer >= 0) begin
             if(timer <= 0 && timer_enable) duty_enable = 0; 
             else timer = timer - 1;
