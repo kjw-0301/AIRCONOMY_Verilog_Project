@@ -24,10 +24,10 @@ module top_module_of_electric_fan (
     input clk, reset_p,
     input [3:0] btn,
     input sw_direction_cntr,
-    output [3:0] led_debug,
+    output [7:0] led_debug,
     output led, pwm,
     output [3:0] com,
-    output [7:0] seg_7 );
+    output [7:0] seg_7);
     
     // Button 0 (btn_power) : 선풍기 파워 조절 (off, 1단, 2단, 3단)
     // Button 1 (btn_timer) : 타이머 모드 (off, 5초, 10초 15초)
@@ -69,7 +69,12 @@ module top_module_of_electric_fan (
     
     // 변화된 모터의 duty값을 모터에 적용
     pwm_cntr #(.pwm_freq(100), .duty_step(4)) control_pwm (.clk(clk), .reset_p(reset_p), .duty(duty), .pwm(pwm));
-    
+
+    //led_mode0
+    wire led_blue;
+    wire [7:0]led_led_debug;
+    fan_led blue_led(.clk(clk), .reset_p(reset_p), .btn_led(btn_led_pedge),
+                                              .led_blue(led_blue), .led_debug(led_led_debug[7:4]));
     
     // FND로 현재의 모터 파워 출력
     wire [15:0] bcd_left_time;
@@ -80,8 +85,23 @@ module top_module_of_electric_fan (
     // LED로 표시
     assign led_debug[3:0] = (duty == 2'd0)? 4'b0001 : (duty == 2'd1)? 4'b0010 :
                             (duty == 2'd2)? 4'b0100 : 4'b1000;
+    assign led = led_blue;
+    assign led_debug[7:4] = led_led_debug[7:4];
     
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Power Control Module
 module power_cntr (

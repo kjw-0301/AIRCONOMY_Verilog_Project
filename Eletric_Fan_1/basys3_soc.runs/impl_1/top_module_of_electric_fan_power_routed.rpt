@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Tue Aug 13 14:30:37 2024
-| Host             : DESKTOP-5VNL0D5 running 64-bit major release  (build 9200)
+| Date             : Tue Aug 13 15:41:27 2024
+| Host             : Ingusto running 64-bit major release  (build 9200)
 | Command          : report_power -file top_module_of_electric_fan_power_routed.rpt -pb top_module_of_electric_fan_power_summary_routed.pb -rpx top_module_of_electric_fan_power_routed.rpx
 | Design           : top_module_of_electric_fan
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.079        |
+| Total On-Chip Power (W)  | 0.082        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.007        |
+| Dynamic (W)              | 0.011        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      488 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      210 |     20800 |            1.01 |
-|   CARRY4       |    <0.001 |       39 |      8150 |            0.48 |
-|   Register     |    <0.001 |      164 |     41600 |            0.39 |
-|   Others       |     0.000 |       19 |       --- |             --- |
-| Signals        |    <0.001 |      252 |       --- |             --- |
-| I/O            |     0.005 |       24 |       106 |           22.64 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      545 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      236 |     20800 |            1.13 |
+|   CARRY4       |    <0.001 |       40 |      8150 |            0.49 |
+|   Register     |    <0.001 |      184 |     41600 |            0.44 |
+|   Others       |     0.000 |       21 |       --- |             --- |
+| Signals        |    <0.001 |      285 |       --- |             --- |
+| I/O            |     0.008 |       28 |       106 |           26.42 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.079 |          |           |                 |
+| Total          |     0.082 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |
+| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,7 +140,7 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| top_module_of_electric_fan |     0.007 |
+| top_module_of_electric_fan |     0.011 |
 +----------------------------+-----------+
 
 

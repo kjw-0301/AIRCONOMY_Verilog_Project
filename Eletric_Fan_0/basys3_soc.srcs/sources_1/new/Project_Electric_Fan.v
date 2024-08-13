@@ -1,31 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2024/08/12 12:35:58
-// Design Name: 
-// Module Name: Project_Electric_Fan
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 // Top module of Electric Fan
 module top_module_of_electric_fan (
     input clk, reset_p,
     input [3:0] btn,
     input sw_direction_cntr,
-    output [3:0] led_debug,
-    output led, pwm,
+    output [7:0] led_debug,
+    output led_blue, pwm,
     output [3:0] com,
     output [7:0] seg_7 );
     
@@ -67,18 +48,59 @@ module top_module_of_electric_fan (
     wire [1:0] duty;
     assign duty = (current_state == ECHO_CONTROL) ? echo_duty : power_duty;
     
+    //led_mode
+    fan_led blue_led(.clk(clk), .reset_p(reset_p), .btn_led(btn_led_pedge),
+                                              .led_blue(led_blue), .led(led_debug[7:4]));
+    
+    
     // 변화된 모터의 duty값을 모터에 적용
     pwm_cntr #(.pwm_freq(100), .duty_step(4)) control_pwm (.clk(clk), .reset_p(reset_p), .duty(duty), .pwm(pwm));
     
     
     // FND로 현재의 모터 파워 출력
-    fnd_cntr fnd(.clk(clk), .reset_p(reset_p), .value({left_time, 10'b0, duty}), .com(com), .seg_7(seg_7));
+    fnd_cntr fnd_power(.clk(clk), .reset_p(reset_p), .value({left_time, 10'b0, duty}), .com(com), .seg_7(seg_7));
+    
+    /*
+    // FND로 현재의 LED 출력 
+    fnd_cntr fnd_led(.clk(clk), .reset_p(reset_p), .value({left_time, 9'b0, led_blue}), .com(com), .seg_7(seg_7));
+    */
     
     // LED로 표시
     assign led_debug[3:0] = (duty == 2'd0)? 4'b0001 : (duty == 2'd1)? 4'b0010 :
                             (duty == 2'd2)? 4'b0100 : 4'b1000;
+       
+
+
     
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Power Control Module
 module power_cntr (
@@ -234,6 +256,27 @@ module power_cntr (
     
     assign left_time = timer;
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // PWM Control Module
 module pwm_cntr #(
