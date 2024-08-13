@@ -27,7 +27,8 @@ module top_module_of_electric_fan (
     output [7:0] led_debug,
     output led, pwm,
     output [3:0] com,
-    output [7:0] seg_7);
+    output [7:0] seg_7,
+    output rotation);
     
     // Button 0 (btn_power) : 선풍기 파워 조절 (off, 1단, 2단, 3단)
     // Button 1 (btn_timer) : 타이머 모드 (off, 5초, 10초 15초)
@@ -46,22 +47,26 @@ module top_module_of_electric_fan (
     parameter TIMER_CONTROL = 4'b0010;
     parameter LED_CONTROL = 4'b0100;
     parameter ECHO_CONTROL = 4'b1000;
+    parameter ROTATION_CONTROL = 4'b0001;
     
     // Declare current state
-    reg [3:0] current_state;
+    reg [4:0] current_state;
     
     // 눌러진 버튼에 따른 선풍기 변화    
     always @(posedge clk or posedge reset_p) begin
         if(reset_p) current_state = POWER_CONTROL;
         else if(btn_power_pedge)  current_state = POWER_CONTROL;
+        else if(btn_timer_pedge)  current_state = TIMER_CONTROL;
         else if(btn_led_pedge) current_state = LED_CONTROL;
         else if(btn_echo_pedge) current_state = ECHO_CONTROL;
+        else if(sw_direction_cntr) current_state = ROTATION_CONTROL;
     end
     
     // Declare Instance of module
     wire [1:0] power_duty, echo_duty;  // duty ratio of motor
     wire [3:0] left_time;              // if current state is timer mode, this variable has data of lefted time.
-    power_cntr power_cntr_0 (.clk(clk), .reset_p(reset_p), .btn_power_enable(btn_power_pedge), .btn_timer_enable(btn_timer_pedge), .duty(power_duty), .left_time(left_time));
+   wire rotation_enable;
+    power_cntr power_cntr_0 (.clk(clk), .reset_p(reset_p), .btn_power_enable(btn_power_pedge), .btn_timer_enable(btn_timer_pedge), .duty(power_duty), .left_time(left_time), .rotation_enable(rotation_enable));
     
     // current state 값에 따라 모터에 적용한 duty 값을 선택 
     wire [1:0] duty;
@@ -88,6 +93,9 @@ module top_module_of_electric_fan (
     assign led = led_blue;
     assign led_debug[7:4] = led_led_debug[7:4];
     
+    
+    // rotation instance
+    rotation_cntr( .clk(clk), .reset_p(reset_p), .sw_direction(sw_direction_cntr),.rotation(rotation), .rotation_enable(rotation_enable));
 endmodule
 
 
@@ -101,15 +109,15 @@ endmodule
 
 
 
-
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Power Control Module
 module power_cntr (
     input clk, reset_p,
     input btn_power_enable,
     input btn_timer_enable,
     output [3:0] left_time,
-    output reg [1:0] duty );
+    output reg [1:0] duty,
+    output reg rotation_enable );
     
     // Declare Parameter
     parameter TURN_OFF = 4'b0001;
@@ -124,55 +132,58 @@ module power_cntr (
     
     // 언제 다음 state로 넘어가는가?
     always @(posedge clk or posedge reset_p) begin
-        if(reset_p) speed_state = TURN_OFF;
-        else if(reset_time_out) speed_state = FIRST_SPEED;
+        if(reset_p | reset_time_out) speed_state = TURN_OFF;
         else if(btn_power_enable) speed_state = speed_next_state;
     end
 
     
     // 각 state의 동작 및 다음 state로 동작하도록 설계
     always @(negedge clk or posedge reset_p) begin
-        if(reset_p) begin
+        if(reset_p | reset_time_out) begin
             speed_next_state = FIRST_SPEED;
             duty = 2'd0;
+            rotation_enable =0;
         end 
-        else if(reset_time_out) speed_next_state = SECOND_SPEED;
         else begin
             case (speed_state)
             // 0단계 : 선풍기 끄기
             TURN_OFF : begin
                 duty = (duty_enable)? 2'd0 : 0;
                 speed_next_state = FIRST_SPEED;
+                rotation_enable =0;
             end    
             
             // 1단계 : 선풍기 약풍
             FIRST_SPEED : begin
                 duty = (duty_enable)? 2'd1 : 0;
                 speed_next_state = SECOND_SPEED;
+                rotation_enable =1;
             end
             
             // 2단계 : 선풍기 중풍
             SECOND_SPEED : begin
                 duty = (duty_enable)? 2'd2 : 0;
                 speed_next_state = THIRD_SPEED;
+                rotation_enable =1;
             end
             
             // 3단계 : 선풍기 강풍
             THIRD_SPEED : begin
                 duty = (duty_enable)? 2'd3 : 0;
                 speed_next_state = TURN_OFF;
+                rotation_enable =1;
             end
                
             // Default case 
             default : begin
                 duty = duty;
                 speed_next_state = speed_next_state;
+                rotation_enable =0;
             end    
             endcase
         end
     end  
     
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //// Timer Setting
 
     // Prescaling operation to create a counter in seconds
@@ -262,7 +273,7 @@ module power_cntr (
     assign left_time = timer;
     
     // When the duty_enable variable is 0 and the btn_power_enable variable is activated, the reset for Time out is enabled.
-    assign reset_time_out = btn_power_enable && !duty_enable;
+    assign reset_time_out = timer_enable && (timer == 0) &&  duty_enable;
 endmodule
 
 // PWM Control Module
@@ -278,7 +289,7 @@ module pwm_cntr #(
     input [31:0] duty,
     output pwm );
 
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     // pwm_freq 주파수를 갖는 PWM을 생성하기 위한 temp 분주화 작업
     integer cnt_temp;
     always @(posedge clk or posedge reset_p) begin
@@ -312,4 +323,45 @@ module pwm_cntr #(
     assign pwm = (cnt_duty < duty) ? 1 : 0;
 endmodule
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+module rotation_cntr(
+        input clk, reset_p,
+        input sw_direction,    // rotation switch
+        input rotation_enable,
+        output rotation              //  surbo moter output
+        );
+        
+        integer clk_div;
+        always @(posedge clk)  clk_div =clk_div +1;   //clock divider
+        
+        wire clk_div_24_nedge;
+        edge_detector_n ed( .clk(clk), .reset_p(reset_p), . cp(clk_div[24]), .n_edge(clk_div_24_nedge));  
+        
+        reg [6:0] duty, duty_max, duty_min;
+        reg down_up;
+        always @(posedge clk or posedge reset_p) begin
+                    if(reset_p) begin
+                            duty =45;
+                            duty_max = 75;     //  12.5% of  pwm
+                            duty_min = 15;       // 2.5% of pwm
+                    end
+                    
+                    else if(sw_direction&&rotation_enable) begin   // rotation switch 'on' -> start
+                             if (clk_div_24_nedge) begin
+                                    if(down_up)begin    // duty goes down until reach duty_min
+                                            if(duty>= duty_min) duty = duty-1;
+                                            else down_up =0;
+                                    end
+                                    else if(!down_up) begin // duty goes up until reach duty_max
+                                            if(duty<=duty_max)duty = duty+1;
+                                            else down_up =1;
+                                    end                              
+                            end
+                      end
+         end
+         
+         pwm_Nstep_freq     #(.duty_step(600), .pwm_freq(50))  
+                 pwm_rotation       (.clk(clk), .reset_p(reset_p),  .duty(duty), .pwm(rotation));   //pwm pulse = rotation
+          
+endmodule
 
