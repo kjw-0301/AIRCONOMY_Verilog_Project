@@ -17,28 +17,28 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 4
+set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir E:/Work/vivado_2019/basys3_soc/basys3_soc.cache/wt [current_project]
-set_property parent.project_path E:/Work/vivado_2019/basys3_soc/basys3_soc.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.cache/wt [current_project]
+set_property parent.project_path C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/user/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store} [current_project]
+set_property board_part_repo_paths {C:/Users/kimhk/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo e:/Work/vivado_2019/basys3_soc/basys3_soc.cache/ip [current_project]
+set_property ip_output_repo c:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v
-  E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v
-  E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v
-  E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v
-  E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v
+  C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.srcs/sources_1/new/Hee_goen_led_sub.v
+  C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.srcs/sources_1/new/clock_library.v
+  C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.srcs/sources_1/new/controler.v
+  C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v
+  C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v
+  C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -48,8 +48,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc
-set_property used_in_implementation false [get_files E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
+read_xdc C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_0/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

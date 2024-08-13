@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/impl_1'
+HD_PWD='C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_1/basys3_soc.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
