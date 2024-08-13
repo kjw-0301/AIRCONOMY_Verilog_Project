@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Aug 13 11:50:51 2024
-# Process ID: 23292
+# Start of session at: Tue Aug 13 13:15:10 2024
+# Process ID: 5520
 # Current directory: E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1
 # Command line: vivado.exe -log top_module_of_electric_fan.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module_of_electric_fan.tcl
 # Log file: E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1/top_module_of_electric_fan.vds
@@ -16,15 +16,11 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14300 
+INFO: Helper process launched with PID 9780 
 WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:691]
 WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:835]
-WARNING: [Synth 8-6901] identifier 'duty_enable' is used before its declaration [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:117]
-WARNING: [Synth 8-6901] identifier 'duty_enable' is used before its declaration [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:123]
-WARNING: [Synth 8-6901] identifier 'duty_enable' is used before its declaration [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:129]
-WARNING: [Synth 8-6901] identifier 'duty_enable' is used before its declaration [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:135]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1164.156 ; gain = 232.301
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1164.824 ; gain = 233.812
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_module_of_electric_fan' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:23]
 	Parameter POWER_CONTROL bound to: 4'b0001 
@@ -54,23 +50,23 @@ INFO: [Synth 8-6157] synthesizing module 'edge_detector_n' [E:/Work/vivado_2019/
 INFO: [Synth 8-6155] done synthesizing module 'edge_detector_n' (3#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
 WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:40]
 INFO: [Synth 8-6155] done synthesizing module 'clock_div_100' (4#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:23]
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:153]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:154]
 INFO: [Synth 8-6157] synthesizing module 'clock_div_1000' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:47]
 WARNING: [Synth 8-7023] instance 'ed_source' of module 'edge_detector_n' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:56]
 WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:70]
 INFO: [Synth 8-6155] done synthesizing module 'clock_div_1000' (5#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/clock_library.v:47]
-WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:154]
-WARNING: [Synth 8-7023] instance 'sec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:155]
-WARNING: [Synth 8-5788] Register timer_setting_reg in module power_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:185]
+WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:155]
+WARNING: [Synth 8-7023] instance 'sec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:156]
+WARNING: [Synth 8-5788] Register timer_setting_reg in module power_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:187]
 INFO: [Synth 8-6155] done synthesizing module 'power_cntr' (6#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:84]
-INFO: [Synth 8-6157] synthesizing module 'pwm_cntr' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:238]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cntr' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:239]
 	Parameter sys_clk bound to: 100000000 - type: integer 
 	Parameter pwm_freq bound to: 100 - type: integer 
 	Parameter duty_step bound to: 4 - type: integer 
 	Parameter temp bound to: 250000 - type: integer 
 	Parameter temp_half bound to: 125000 - type: integer 
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:267]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr' (7#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:238]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:268]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr' (7#1) [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:239]
 INFO: [Synth 8-6157] synthesizing module 'fnd_cntr' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/controler.v:22]
 INFO: [Synth 8-6157] synthesizing module 'ring_counter_fnd' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
 WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:278]
@@ -85,7 +81,7 @@ INFO: [Synth 8-6155] done synthesizing module 'top_module_of_electric_fan' (11#1
 WARNING: [Synth 8-3331] design top_module_of_electric_fan has unconnected port led
 WARNING: [Synth 8-3331] design top_module_of_electric_fan has unconnected port sw_direction_cntr
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1211.930 ; gain = 280.074
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1213.172 ; gain = 282.160
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -98,12 +94,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1229.859 ; gain = 298.004
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1213.172 ; gain = 282.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1229.859 ; gain = 298.004
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1213.172 ; gain = 282.160
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1229.859 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1213.172 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -117,29 +113,29 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_of_electric_fan_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1346.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1333.254 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1346.930 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1333.254 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1333.254 ; gain = 402.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1333.254 ; gain = 402.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1333.254 ; gain = 402.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1333.254 ; gain = 402.242
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -158,14 +154,14 @@ Detailed RTL Component Info :
 +---Registers : 
 	               10 Bit    Registers := 2     
 	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 8     
+	                4 Bit    Registers := 9     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 36    
+	                1 Bit    Registers := 35    
 +---Muxes : 
 	   2 Input     10 Bit        Muxes := 2     
 	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
 	   5 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
 	   3 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
@@ -224,14 +220,14 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	                4 Bit    Registers := 5     
+	                4 Bit    Registers := 6     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 2     
-	   5 Input      1 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
 Module ring_counter_fnd 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -275,25 +271,15 @@ INFO: [Synth 8-4471] merging register 'btn_echo_cntr/ed_clk/ff_old_reg' into 'bt
 INFO: [Synth 8-4471] merging register 'fnd/rc/ed/ff_old_reg' into 'btn_power_cntr/ed_clk/ff_old_reg' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
 WARNING: [Synth 8-3331] design top_module_of_electric_fan has unconnected port led
 WARNING: [Synth 8-3331] design top_module_of_electric_fan has unconnected port sw_direction_cntr
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\current_state_reg[1] )
+INFO: [Synth 8-3886] merging instance 'power_cntr_0/timer_next_state_reg[0]' (FDPE_1) to 'power_cntr_0/timer_next_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'power_cntr_0/timer_next_state_reg[1]' (FDCE_1) to 'power_cntr_0/timer_next_state_reg[3]'
 INFO: [Synth 8-3886] merging instance 'power_cntr_0/timer_state_reg[0]' (FDCE) to 'power_cntr_0/timer_state_reg[2]'
-INFO: [Synth 8-3886] merging instance 'power_cntr_0/timer_setting_reg[1]' (FDE_1) to 'power_cntr_0/timer_setting_reg[3]'
+INFO: [Synth 8-3886] merging instance 'power_cntr_0/timer_state_reg[1]' (FDCE) to 'power_cntr_0/timer_state_reg[3]'
 INFO: [Synth 8-3886] merging instance 'power_cntr_0/timer_setting_reg[0]' (FDE_1) to 'power_cntr_0/timer_setting_reg[2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\power_cntr_0/timer_setting_reg[3] )
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'power_cntr_0/timer_next_state_reg[3]__0/Q' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'power_cntr_0/timer_next_state_reg[2]__0/Q' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'power_cntr_0/timer_next_state_reg[1]__0/Q' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'power_cntr_0/timer_next_state_reg[0]__0/Q' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:172]
+INFO: [Synth 8-3886] merging instance 'power_cntr_0/timer_setting_reg[1]' (FDE_1) to 'power_cntr_0/timer_setting_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\current_state_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1333.254 ; gain = 402.242
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -305,13 +291,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1333.254 ; gain = 402.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1333.254 ; gain = 402.242
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -323,7 +309,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1334.840 ; gain = 403.828
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -347,13 +333,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1340.656 ; gain = 409.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1340.656 ; gain = 409.645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -361,36 +347,38 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin power_cntr_0/timer_enable with 1st driver pin 'power_cntr_0/timer_enable_reg__0/Q' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin power_cntr_0/timer_enable with 2nd driver pin 'power_cntr_0/timer_enable_reg/Q' [E:/Work/vivado_2019/basys3_soc/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:229]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1340.656 ; gain = 409.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1340.656 ; gain = 409.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1340.656 ; gain = 409.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1340.656 ; gain = 409.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -408,15 +396,15 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    39|
-|3     |LUT1   |     4|
-|4     |LUT2   |   169|
-|5     |LUT3   |     8|
-|6     |LUT4   |    23|
-|7     |LUT5   |    15|
-|8     |LUT6   |    30|
-|9     |FDCE   |   130|
-|10    |FDPE   |     7|
-|11    |FDRE   |    22|
+|3     |LUT1   |     5|
+|4     |LUT2   |   171|
+|5     |LUT3   |     7|
+|6     |LUT4   |    25|
+|7     |LUT5   |    16|
+|8     |LUT6   |    31|
+|9     |FDCE   |   132|
+|10    |FDPE   |     8|
+|11    |FDRE   |    24|
 |12    |IBUF   |     6|
 |13    |OBUF   |    17|
 |14    |OBUFT  |     1|
@@ -426,7 +414,7 @@ Report Instance Areas:
 +------+-------------------+-------------------+------+
 |      |Instance           |Module             |Cells |
 +------+-------------------+-------------------+------+
-|1     |top                |                   |   472|
+|1     |top                |                   |   483|
 |2     |  btn_echo_cntr    |button_cntr        |     6|
 |3     |    ed_btn         |edge_detector_p_10 |     5|
 |4     |  btn_led_cntr     |button_cntr_0      |     3|
@@ -434,44 +422,44 @@ Report Instance Areas:
 |6     |  btn_power_cntr   |button_cntr_1      |    30|
 |7     |    ed_btn         |edge_detector_p_7  |     3|
 |8     |    ed_clk         |edge_detector_p_8  |     3|
-|9     |  btn_timer_cntr   |button_cntr_2      |     5|
-|10    |    ed_btn         |edge_detector_p_6  |     4|
+|9     |  btn_timer_cntr   |button_cntr_2      |     4|
+|10    |    ed_btn         |edge_detector_p_6  |     3|
 |11    |  control_pwm      |pwm_cntr           |   261|
 |12    |    ed             |edge_detector_p    |     6|
 |13    |  fnd              |fnd_cntr           |    19|
 |14    |    nolabel_line40 |decoder_7seg       |     7|
 |15    |    rc             |ring_counter_fnd   |     8|
-|16    |  power_cntr_0     |power_cntr         |   120|
+|16    |  power_cntr_0     |power_cntr         |   132|
 |17    |    msec_clk       |clock_div_1000     |    31|
 |18    |      ed           |edge_detector_n_5  |     6|
-|19    |    sec_clk        |clock_div_1000_3   |    32|
-|20    |      ed           |edge_detector_n_4  |     7|
+|19    |    sec_clk        |clock_div_1000_3   |    33|
+|20    |      ed           |edge_detector_n_4  |     8|
 |21    |    usec_clk       |clock_div_100      |    20|
 |22    |      ed           |edge_detector_n    |     4|
 +------+-------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1340.656 ; gain = 409.645
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 12 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1346.930 ; gain = 298.004
-Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1346.930 ; gain = 415.074
+Synthesis finished with 0 errors, 2 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1340.656 ; gain = 289.562
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1340.656 ; gain = 409.645
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1352.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1352.734 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1352.992 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1352.734 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-52 Infos, 27 Warnings, 13 Critical Warnings and 0 Errors encountered.
+54 Infos, 23 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1352.992 ; gain = 701.098
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1352.992 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1352.734 ; gain = 701.672
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1352.734 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/synth_1/top_module_of_electric_fan.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_module_of_electric_fan_utilization_synth.rpt -pb top_module_of_electric_fan_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 11:51:21 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 13:15:34 2024...
