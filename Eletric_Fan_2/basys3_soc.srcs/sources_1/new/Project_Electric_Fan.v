@@ -71,6 +71,7 @@ module top_module_of_electric_fan (
     // current state 값에 따라 모터에 적용한 duty 값을 선택 
     wire [1:0] duty;
     assign duty = (current_state == ECHO_CONTROL) ? echo_duty : power_duty;
+    dht11_duty(.clk(clk),.reset_p(reset_p), .dht11_data(dht11_data),.echo_btn_enable(btn_echo_pedge),.duty(echo_duty));s
     
     // 변화된 모터의 duty값을 모터에 적용
     pwm_cntr #(.pwm_freq(100), .duty_step(4)) control_pwm (.clk(clk), .reset_p(reset_p), .duty(duty), .pwm(pwm));
@@ -583,4 +584,42 @@ module fnd_cntr(     //컨트롤러  //fnd 0일때 켜진다.
         decoder_7seg sub7seg(.hex_value(hex_value), .seg_7(seg_7));
         //sub7seg 이름 설정
 endmodule
+
+//dht11 module
+module dht11_duty(
+    input clk, reset_p, 
+    inout dht11_data,
+    input echo_btn_enable,
+    output reg[1:0]duty);
+    
+    wire [7:0] humidity, temperature; 
+    dht11_cntrl dth11(.clk(clk), .reset_p(reset_p), .dht11_data(dht11_data), .humidity(humidity), .temperature(temperature));
+    
+    wire [15:0] humidity_bcd, temperature_bcd;
+    bin_to_dec bcd_humi(.bin({4'b0, humidity}),  .bcd(humidity_bcd));
+    bin_to_dec bcd_temp(.bin({4'b0, temperature}),  .bcd(temperature_bcd));
+    
+    wire[15:0] t_data = temperature_bcd;
+    wire[15:0] h_data = humidity_bcd;
+    reg echo_enable;
+    always@(posedge clk or posedge reset_p)begin
+        if(reset_p)begin
+            duty <= 2'd0;
+            echo_enable = 0;
+        end
+        else if(echo_btn_enable) begin 
+            if(echo_enable)begin
+                if(t_data[7:0] >= 15'd32 && h_data[7:0] <= 15'd15) duty = 2'd0;
+                else if(t_data[7:0] >= 15'd31 && h_data[7:0] >= 15'd25) duty = 2'd3;
+                else if(t_data[7:0] >= 15'd28 && h_data[7:0] >= 15'd25) duty = 2'd2;
+                else if(t_data[7:0] >= 15'd25 && h_data[7:0] >= 15'd25) duty = 2'd1;
+            end
+        end
+    end
+    
+endmodule
+
+
+
+
 
