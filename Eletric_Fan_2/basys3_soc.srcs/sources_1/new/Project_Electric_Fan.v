@@ -71,7 +71,7 @@ module top_module_of_electric_fan (
     // current state 값에 따라 모터에 적용한 duty 값을 선택 
     wire [1:0] duty;
     assign duty = (current_state == ECHO_CONTROL) ? echo_duty : power_duty;
-    dht11_duty(.clk(clk),.reset_p(reset_p), .dht11_data(dht11_data),.echo_btn_enable(btn_echo_pedge),.duty(echo_duty));s
+    dht11_duty(.clk(clk),.reset_p(reset_p), .dht11_data(dht11_data),.echo_btn_enable(btn_echo_pedge),.duty(echo_duty));
     
     // 변화된 모터의 duty값을 모터에 적용
     pwm_cntr #(.pwm_freq(100), .duty_step(4)) control_pwm (.clk(clk), .reset_p(reset_p), .duty(duty), .pwm(pwm));
