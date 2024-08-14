@@ -626,7 +626,7 @@ module dht11_duty(
         else begin 
             case(ehco_state)
                 ECHO_ON: begin
-                    if(8'd25 <= temperature_data && temperature_data <= 8'd26) duty = 2'd1;
+                    if(8'd24 <= temperature_data && temperature_data <= 8'd26) duty = 2'd1;
                     else if(8'd27 <= temperature_data && temperature_data <= 8'd29) duty = 2'd2;
                     else if(temperature_data > 8'd32) duty = 2'd3;
 //                    else if(t_data >= 15'd28  h_data >= 15'd25) duty = 2'd2;
