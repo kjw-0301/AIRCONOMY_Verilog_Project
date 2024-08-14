@@ -2,35 +2,285 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Aug 14 08:35:05 2024
-# Process ID: 3520
+# Start of session at: Wed Aug 14 08:49:17 2024
+# Process ID: 9828
 # Current directory: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3680 C:\Users\minkyu\Documents\GitHub\AIRCONOMY_Verilog_Project\Eletric_Fan_2\basys3_soc.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9640 C:\Users\minkyu\Documents\GitHub\AIRCONOMY_Verilog_Project\Eletric_Fan_2\basys3_soc.xpr
 # Log file: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/vivado.log
 # Journal file: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.xpr
-INFO: [Project 1-313] Project file moved from 'E:/Work/vivado_2019/basys3_soc' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/Users/minkyu/Documents/Users/kcci/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store', nor could it be found using path 'E:/Users/kcci/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/minkyu/Documents/Users/kcci/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 955.102 ; gain = 322.156
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 987.828 ; gain = 362.707
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Wed Aug 14 08:38:00 2024] Launched synth_1...
+[Wed Aug 14 08:52:44 2024] Launched synth_1...
 Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
-[Wed Aug 14 08:38:00 2024] Launched impl_1...
+[Wed Aug 14 08:52:45 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-14:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1055.957 ; gain = 0.551
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7F95A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2289.793 ; gain = 1233.836
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 09:06:47 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 09:06:47 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-14:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2327.008 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7F95A
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 09:14:43 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 09:14:43 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 09:20:40 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 09:20:40 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 09:40:40 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 09:40:40 2024] Launched impl_1...
 Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Wed Aug 14 08:41:22 2024] Launched synth_1...
+[Wed Aug 14 09:43:12 2024] Launched synth_1...
 Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
-[Wed Aug 14 08:41:22 2024] Launched impl_1...
+[Wed Aug 14 09:43:12 2024] Launched impl_1...
 Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
-exit
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 08:47:48 2024...
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 09:46:47 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 09:46:47 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-14:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2363.180 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7F95A
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 09:53:07 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 09:53:07 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 10:06:56 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 10:06:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 10:13:52 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 10:13:52 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 10:15:53 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 10:15:53 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 10:21:22 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 10:21:22 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 10:25:20 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 10:25:20 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 10:30:42 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 10:30:42 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 10:31:44 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 10:31:44 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 14 10:36:47 2024] Launched synth_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log
+[Wed Aug 14 10:36:47 2024] Launched impl_1...
+Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager

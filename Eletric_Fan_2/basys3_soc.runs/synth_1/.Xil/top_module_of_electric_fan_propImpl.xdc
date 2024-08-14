@@ -25,6 +25,8 @@ set_property src_info {type:XDC file:1 line:40 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN V3    IOSTANDARD LVCMOS33 } [get_ports {led_debug[9]}]
 set_property src_info {type:XDC file:1 line:41 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W3    IOSTANDARD LVCMOS33 } [get_ports {led_debug[10]}]
+set_property src_info {type:XDC file:1 line:42 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U3    IOSTANDARD LVCMOS33 } [get_ports {led_debug[11]}]
 set_property src_info {type:XDC file:1 line:50 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W7   IOSTANDARD LVCMOS33 } [get_ports {seg_7[7]}]
 set_property src_info {type:XDC file:1 line:51 export:INPUT save:INPUT read:READ} [current_design]
@@ -63,5 +65,7 @@ set_property src_info {type:XDC file:1 line:75 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN J1   IOSTANDARD LVCMOS33 } [get_ports {pwm}];#Sch name = JA1
 set_property src_info {type:XDC file:1 line:76 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN L2   IOSTANDARD LVCMOS33 } [get_ports {led}];#Sch name = JA2
+set_property src_info {type:XDC file:1 line:77 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN J2   IOSTANDARD LVCMOS33 } [get_ports {rotation}];#Sch name = JA3
 set_property src_info {type:XDC file:1 line:85 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN A14   IOSTANDARD LVCMOS33 } [get_ports {dht11}];#Sch name = JB1

@@ -1,0 +1,2088 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 9828
+License: Customer
+
+Current time: 	Wed Aug 14 08:49:34 KST 2024
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 70 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	minkyu
+User home directory: C:/Users/minkyu
+User working directory: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2
+User country: 	KR
+User language: 	ko
+User locale: 	ko_KR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/minkyu/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/minkyu/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/minkyu/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/vivado.log
+Vivado journal file location: 	C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/vivado.jou
+Engine tmp dir: 	C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/.Xil/Vivado-9828-DESKTOP-VQQPT2C
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_SDK: C:/Xilinx/Vitis/2019.2
+XILINX_VITIS: C:/Xilinx/Vitis/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 678 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\minkyu\Documents\GitHub\AIRCONOMY_Verilog_Project\Eletric_Fan_2\basys3_soc.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 758 MB. GUI used memory: 52 MB. Current time: 8/14/24, 8:49:36 AM KST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 67 MB (+67547kb) [00:00:16]
+// [Engine Memory]: 882 MB (+773462kb) [00:00:16]
+// [GUI Memory]: 85 MB (+15873kb) [00:00:17]
+// [GUI Memory]: 110 MB (+21190kb) [00:00:17]
+// [Engine Memory]: 946 MB (+20897kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  3319 ms.
+// Tcl Message: open_project C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 987.828 ; gain = 362.707 
+// Project name: basys3_soc; location: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bB (cr)
+// [Engine Memory]: 998 MB (+4791kb) [00:00:24]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 22 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; place_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Wed Aug 14 08:42:45 KST 2024 ; 00:00:40 ; Vivado Implementation Defaults (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "place_design ERROR", 2, false); // az (O, cr)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.5s
+// [GUI Memory]: 116 MB (+514kb) [00:00:43]
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; place_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Wed Aug 14 08:42:45 KST 2024 ; 00:00:40 ; Vivado Implementation Defaults (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "place_design ERROR", 2, false, false, false, false, false, true); // az (O, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module_of_electric_fan (Project_Electric_Fan.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module_of_electric_fan (Project_Electric_Fan.v), btn_power_cntr : button_cntr (controler.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Sources_search"); // x (f, cr): TRUE
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "xdc", true); // OverlayTextField (C, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 61 MB. Current time: 8/14/24, 8:50:16 AM KST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys-3-Master.xdc]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys-3-Master.xdc]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 2); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 2, false, true); // i (h, cr) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1, false, true); // i (h, cr) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", (String) null, true); // OverlayTextField (C, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module_of_electric_fan (Project_Electric_Fan.v), rotation_cntr : rotation_cntr (Project_Electric_Fan.v)]", 12, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module_of_electric_fan (Project_Electric_Fan.v), rotation_cntr : rotation_cntr (Project_Electric_Fan.v)]", 12, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("Project_Electric_Fan.v", 152, 199); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 152, 199, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 158, 191); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 158, 190, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 2); // i (h, cr)
+selectCodeEditor("Basys-3-Master.xdc", 598, 125); // ch (w, cr)
+selectCodeEditor("Basys-3-Master.xdc", 185, 199); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("Project_Electric_Fan.v", 172, 113); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 172, 113, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 166, 93); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 166, 93, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+selectCodeEditor("Project_Electric_Fan.v", 113, 173); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 113, 173, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 2); // i (h, cr)
+selectCodeEditor("Basys-3-Master.xdc", 8, 204); // ch (w, cr)
+selectCodeEditor("Basys-3-Master.xdc", 520, 204); // ch (w, cr)
+selectCodeEditor("Basys-3-Master.xdc", 520, 204, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Basys-3-Master.xdc", 'v'); // ch (w, cr)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Aug 14 08:52:44 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 08:52:45 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 179 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 123 MB (+963kb) [00:06:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  1122 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bB)
+// [GUI Memory]: 131 MB (+2327kb) [00:06:30]
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 07 2019-14:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1055.957 ; gain = 0.551 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  6079 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7F95A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,251 MB. GUI used memory: 68 MB. Current time: 8/14/24, 8:56:03 AM KST
+// [Engine Memory]: 2,251 MB (+1261172kb) [00:06:38]
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (1) ; Connected", 0, "localhost (1)", 0, true); // t (O, cr) - Node
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2289.793 ; gain = 1233.836 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("Project_Electric_Fan.v", 80, 126); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 80, 126, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("Project_Electric_Fan.v", 63, 126); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 63, 126, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(PAResourceOtoP.PACodeEditor_GOTO_DEFINITION, "Go to Definition"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("Project_Electric_Fan.v", 162, 293); // ch (w, cr)
+// Elapsed time: 73 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 1); // i (h, cr)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0); // i (h, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 96 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 1); // i (h, cr)
+// WARNING: HTimer (StateMonitor Timer) is taking 662ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 240 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0); // i (h, cr)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cr)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1047 ms.
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+selectCodeEditor("Basys-3-Master.xdc", 532, 189); // ch (w, cr)
+selectCodeEditor("Basys-3-Master.xdc", 532, 189, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys-3-Master.xdc", 535, 187); // ch (w, cr)
+selectCodeEditor("Basys-3-Master.xdc", 535, 187, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+selectCodeEditor("Project_Electric_Fan.v", 1053, 333); // ch (w, cr)
+// Elapsed time: 137 seconds
+selectCodeEditor("Project_Electric_Fan.v", 208, 281); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Project_Electric_Fan.v", 347, 276); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 347, 276, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 412, 363); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 351, 296, false, true, false, false, false); // ch (w, cr) - Control Key
+selectCodeEditor("Project_Electric_Fan.v", 794, 310); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Aug 14 09:06:47 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 09:06:47 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 173 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Running write_bitstream... ; 0.7833467125892639 ; 0.0 ; 0.1320326030254364 ; 0.0 ; 0.0 ; 0.08282911777496338 ; 0 ; 469 ; 359 ; 0.0 ; 0 ; 0 ; Wed Aug 14 09:08:12 KST 2024 ; 00:01:27 ; Vivado Implementation Defaults (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "83", 3, false); // az (O, cr)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1217 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 07 2019-14:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2327.008 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7F95A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 179 seconds
+selectCodeEditor("Project_Electric_Fan.v", 184, 327); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 184, 327, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 1); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0); // i (h, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("Project_Electric_Fan.v", 123, 427); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 123, 427, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 334, 425); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 1); // i (h, cr)
+// [GUI Memory]: 144 MB (+6926kb) [00:24:19]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0); // i (h, cr)
+// Elapsed time: 31 seconds
+selectCodeEditor("Project_Electric_Fan.v", 478, 353); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 478, 353, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 134, 348); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 501, 356); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 277, 395); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 278, 389); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 401, 457); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 240, 385); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 641, 264); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 641, 264, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 211, 294); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,294 MB. GUI used memory: 77 MB. Current time: 8/14/24, 9:14:41 AM KST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.3s
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Aug 14 09:14:43 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 09:14:43 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 179 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 38 seconds
+selectCodeEditor("Project_Electric_Fan.v", 78, 107); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 78, 107, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 101, 117); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectCodeEditor("Project_Electric_Fan.v", 181, 134); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 125, 114); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 130, 110); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 478, 210); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 126, 108); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 126, 108, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 298, 132); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 426, 115); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 426, 115, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 544, 110); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 544, 110, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 619, 117); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 619, 117, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 770, 119); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 770, 119, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 770, 119); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 663, 111); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 667, 111, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 19, 112); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 31, 111); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectCodeEditor("Project_Electric_Fan.v", 236, 96); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 236, 96, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 191, 110); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 191, 110, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("Project_Electric_Fan.v", 147, 159); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 147, 159, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 157, 355); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 1); // i (h, cr)
+selectCodeEditor("Basys-3-Master.xdc", 629, 169); // ch (w, cr)
+selectCodeEditor("Basys-3-Master.xdc", 13, 177); // ch (w, cr)
+selectCodeEditor("Basys-3-Master.xdc", 4, 175); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0); // i (h, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 127, 120); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 127, 120, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 139, 113); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 139, 113, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 250, 348); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 250, 348, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Aug 14 09:20:40 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 09:20:40 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 123 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0); // i (h, cr)
+selectCodeEditor("Project_Electric_Fan.v", 315, 359); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 281, 394); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 305, 361); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 18, 351); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 313, 360); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 20, 357); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 665, 293); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 665, 293, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 760, 295); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 760, 295, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 539, 289); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 539, 290, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 43 seconds
+selectCodeEditor("Project_Electric_Fan.v", 582, 240); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 582, 240, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 604, 321); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 604, 321, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 509, 249); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 509, 249, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 68 seconds
+selectCodeEditor("Project_Electric_Fan.v", 303, 232); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectCodeEditor("Project_Electric_Fan.v", 200, 244); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 38 seconds
+selectCodeEditor("Project_Electric_Fan.v", 1, 95); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 548, 251); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("Project_Electric_Fan.v", 28, 219); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 189, 155); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 152, 176); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 129, 174); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 156, 186); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 157, 186, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 175, 171); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectCodeEditor("Project_Electric_Fan.v", 172, 190); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 139, 181); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 139, 181, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 175, 188); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 180, 188); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 180, 188, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 193, 233); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("Project_Electric_Fan.v", 152, 63); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 153, 58); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 153, 58, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 146, 96); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 137, 35); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 137, 35, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 229, 278); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 118, 60); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 123, 55); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 123, 55, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 248, 274); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 247, 275, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("Project_Electric_Fan.v", 140, 126); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 140, 126, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 112, 422); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 144, 371); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 144, 371, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 261, 429); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 260, 428, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 250, 370); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 250, 370, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 344, 437); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 347, 424); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 84, 348); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 98, 348); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectCodeEditor("Project_Electric_Fan.v", 169, 353); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 169, 353, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 61 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0, false, true); // i (h, cr) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Project_Electric_Fan.v", 182, 384); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 358, 313); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 359, 313, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 133, 398); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 364, 306); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 364, 306, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 133, 391); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 136, 53); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 136, 53, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 215, 390); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 128, 410); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 205, 433); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 139, 431); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 228, 442); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 131, 450); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 138, 444); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("Project_Electric_Fan.v", 146, 247); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 146, 246, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 120, 453, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("Project_Electric_Fan.v", 117, 452); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 217, 454); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 137, 52); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 136, 52, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 137, 463); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 140, 467, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Project_Electric_Fan.v", 222, 458); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 81, 476); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 227, 458); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 229, 474); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("Project_Electric_Fan.v", 161, 548); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 161, 547, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 164, 486); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 130, 203); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 130, 203, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 211, 206); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 211, 206, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 56, 204); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 54, 221); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 161, 487); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("Project_Electric_Fan.v", 160, 547); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 160, 547, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 380, 535); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 265, 547); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Project_Electric_Fan.v", 289, 565, false, true, false, false, false); // ch (w, cr) - Control Key
+selectCodeEditor("Project_Electric_Fan.v", 317, 490); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 130, 549); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 158, 488); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 470, 547); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 470, 547, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 486, 546); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 480, 549); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 438, 490); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 112, 562); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 518, 481); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 109, 514); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 111, 528); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 111, 583); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 523, 640); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 166, 554); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 140, 68); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 140, 68, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 132, 553); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 127, 559); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 266, 557); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 91, 609); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 108, 608); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 128, 590); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 172, 577); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("Project_Electric_Fan.v", 48, 204); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 171, 196, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("Project_Electric_Fan.v", 137, 203); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 213, 202); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 213, 202, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 55, 146); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 309, 257); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 332, 389); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 227, 236); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 214, 211); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 240, 224); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 51, 143); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 55, 142); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 318, 214); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 341, 269); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 342, 389); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 354, 425); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 372, 324); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 44, 146); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 48, 202); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 0, false, true); // i (h, cr) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M (aI, cr)
+// Elapsed time: 83 seconds
+selectCodeEditor("Project_Electric_Fan.v", 276, 315); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 276, 308); // ch (w, cr)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cr)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module_of_electric_fan (Project_Electric_Fan.v), d11 : dht11_duty (Project_Electric_Fan.v)]", 10); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module_of_electric_fan (Project_Electric_Fan.v), d11 : dht11_duty (Project_Electric_Fan.v), dth11 : dht11_cntrl (controler.v)]", 11, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module_of_electric_fan (Project_Electric_Fan.v), d11 : dht11_duty (Project_Electric_Fan.v), dth11 : dht11_cntrl (controler.v)]", 11, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 11 seconds
+selectCodeEditor("controler.v", 168, 247); // ch (w, cr)
+selectCodeEditor("controler.v", 168, 247, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("controler.v", 160, 233); // ch (w, cr)
+selectCodeEditor("controler.v", 160, 233, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("controler.v", 155, 143); // ch (w, cr)
+selectCodeEditor("controler.v", 155, 143, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("controler.v", 234, 176); // ch (w, cr)
+selectCodeEditor("controler.v", 234, 176, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("controler.v", 302, 173); // ch (w, cr)
+selectCodeEditor("controler.v", 302, 173, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("controler.v", 375, 190); // ch (w, cr)
+selectCodeEditor("controler.v", 375, 189, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("controler.v", 372, 204); // ch (w, cr)
+selectCodeEditor("controler.v", 372, 204, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("controler.v", 372, 189); // ch (w, cr)
+selectCodeEditor("controler.v", 372, 189, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("controler.v", 369, 200); // ch (w, cr)
+selectCodeEditor("controler.v", 369, 200, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+selectCodeEditor("Project_Electric_Fan.v", 810, 203); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 810, 203, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 617, 198); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 617, 198, false, false, false, false, true); // ch (w, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,326 MB. GUI used memory: 74 MB. Current time: 8/14/24, 9:37:57 AM KST
+// Elapsed time: 15 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "dht"); // OverlayTextField (C, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dht11_test_top (test_top.v)]", 8, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dht11_test_top (test_top.v)]", 8, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 25 seconds
+selectCodeEditor("test_top.v", 73, 396); // ch (w, cr)
+selectCodeEditor("test_top.v", 74, 396, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("test_top.v", 74, 396, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectMenuItem(PAResourceOtoP.PACodeEditor_GOTO_DEFINITION, "Go to Definition"); // ai (ao, Popup.HeavyWeightWindow)
+selectCodeEditor("Project_Electric_Fan.v", 171, 206); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 171, 206, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "test_top.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controler.v", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+selectCodeEditor("Project_Electric_Fan.v", 199, 161); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 199, 161, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 228, 172); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 228, 172, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 191, 157); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 191, 157, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 193, 168); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 193, 168, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 193, 156); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 193, 156, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 182, 173); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 182, 173, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 188, 160); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 188, 160, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 181, 179); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 181, 179, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 187, 163); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 187, 163, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 187, 176); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 187, 176, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 196, 160); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 196, 160, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 248, 187); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 248, 180); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 248, 180, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 248, 174); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 248, 174, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("Project_Electric_Fan.v", 95, 159); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "test_top.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controler.v", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "test_top.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project_Electric_Fan.v", 1); // i (h, cr)
+selectCodeEditor("Project_Electric_Fan.v", 148, 336); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 296, 337); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 163, 339); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 279, 371); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 268, 348); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 267, 352); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 267, 352, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 218, 350); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 218, 350, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 29, 350); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 302, 365); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 83, 382); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 205, 365); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 205, 365, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 224, 383); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 224, 383, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 154, 369); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 63, 290); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Aug 14 09:40:40 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 09:40:40 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 130 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-434] mixed level sensitive and edge triggered event controls are not supported for synthesis [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:614]. ]", 1, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\minkyu\Documents\GitHub\AIRCONOMY_Verilog_Project\Eletric_Fan_2\basys3_soc.srcs\sources_1\new\Project_Electric_Fan.v;-;;-;16;-;line;-;614;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'dht11_duty' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:591]. ]", 2, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\minkyu\Documents\GitHub\AIRCONOMY_Verilog_Project\Eletric_Fan_2\basys3_soc.srcs\sources_1\new\Project_Electric_Fan.v;-;;-;16;-;line;-;591;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-434] mixed level sensitive and edge triggered event controls are not supported for synthesis [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:614]. ]", 1, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\minkyu\Documents\GitHub\AIRCONOMY_Verilog_Project\Eletric_Fan_2\basys3_soc.srcs\sources_1\new\Project_Electric_Fan.v;-;;-;16;-;line;-;614;-;;-;16;-;"); // ah (O, cr)
+selectCodeEditor("Project_Electric_Fan.v", 187, 158); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Aug 14 09:43:12 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 09:43:12 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 164 seconds
+selectCodeEditor("Project_Electric_Fan.v", 342, 267); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 576, 348); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 457, 362); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 566, 349); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 378, 144); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 378, 144, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 181, 368); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 156, 367); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 156, 367, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 392, 143); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 392, 143, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 167, 372); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 167, 372, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 156, 400); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 156, 400, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 267, 370); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 246, 418); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 192, 367); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 192, 367, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 170, 425); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 170, 425, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 226, 213); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 226, 213, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 280, 423); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+// aj (cr): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("Project_Electric_Fan.v", 272, 469); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: [Wed Aug 14 09:46:47 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 09:46:47 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 110 seconds
+selectCodeEditor("Project_Electric_Fan.v", 246, 310); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 293, 318); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 90 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1128 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// [GUI Memory]: 152 MB (+277kb) [01:00:49]
+dismissDialog("Open Hardware Manager"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 07 2019-14:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2363.180 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7F95A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 37 seconds
+selectCodeEditor("Project_Electric_Fan.v", 242, 204); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 246, 204); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 272, 199); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 212, 206); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 212, 206, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 111, 201); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 111, 201, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 168, 221); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 183, 189); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 175, 222); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 157, 215); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 123, 218); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 123, 218, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 175, 217); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 172, 217, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 164, 197); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 174, 189); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 170, 226); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 150, 207); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 42 seconds
+selectCodeEditor("Project_Electric_Fan.v", 120, 323); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 162, 337); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 140, 321); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 146, 330); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 143, 323); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 143, 325); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // E (f, cr)
+selectCodeEditor("Project_Electric_Fan.v", 263, 261); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 495, 305); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 216, 305); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 356, 303); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 217, 306); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 350, 307); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Aug 14 09:53:07 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 09:53:07 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 161 seconds
+selectCodeEditor("Project_Electric_Fan.v", 147, 141); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 147, 141, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 61 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 31 seconds
+selectCodeEditor("Project_Electric_Fan.v", 49, 328); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 28, 335); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Project_Electric_Fan.v", 14, 341); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Project_Electric_Fan.v", 18, 360); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 10, 344); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 2, 336, false, true, false, false, false); // ch (w, cr) - Control Key
+selectCodeEditor("Project_Electric_Fan.v", 126, 338); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 43 seconds
+selectCodeEditor("Project_Electric_Fan.v", 289, 320); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("Project_Electric_Fan.v", 218, 321); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 359, 320); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 404, 320); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 356, 319); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 487, 323); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 151, 337); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 257, 341); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("Project_Electric_Fan.v", 154, 349); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 150, 365); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Project_Electric_Fan.v", 150, 368); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 154, 380); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 475, 317); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("Project_Electric_Fan.v", 391, 341); // ch (w, cr)
+// Elapsed time: 37 seconds
+selectCodeEditor("Project_Electric_Fan.v", 249, 335); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 303, 339); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 257, 331); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 254, 359); // ch (w, cr)
+// Elapsed time: 40 seconds
+selectCodeEditor("Project_Electric_Fan.v", 322, 370); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 317, 351); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 305, 335, false, true, false, false, false); // ch (w, cr) - Control Key
+selectCodeEditor("Project_Electric_Fan.v", 669, 354); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("Project_Electric_Fan.v", 300, 336); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("Project_Electric_Fan.v", 316, 337); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 316, 337, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 329, 342); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 308, 339); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 303, 350); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 304, 354); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 302, 367); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 430, 350); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 433, 372); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 160 MB (+809kb) [01:13:29]
+// Elapsed time: 27 seconds
+selectCodeEditor("Project_Electric_Fan.v", 300, 365); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 298, 353); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("Project_Electric_Fan.v", 432, 336); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 298, 336); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 378, 290); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Project_Electric_Fan.v", 383, 368); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 250, 368); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 300, 367); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 434, 366); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 385, 355); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 433, 350); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 255, 370); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("Project_Electric_Fan.v", 307, 368); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 431, 352); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 425, 371); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 425, 370, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 57 seconds
+selectCodeEditor("Project_Electric_Fan.v", 295, 349); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 252, 352); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("Project_Electric_Fan.v", 439, 352); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 168 MB (+182kb) [01:16:59]
+selectCodeEditor("Project_Electric_Fan.v", 388, 341); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 248, 335); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Project_Electric_Fan.v", 303, 341); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 273, 323); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Aug 14 10:06:56 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 10:06:56 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,326 MB. GUI used memory: 85 MB. Current time: 8/14/24, 10:07:57 AM KST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 362 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 31 seconds
+selectCodeEditor("Project_Electric_Fan.v", 295, 328); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Aug 14 10:13:52 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 10:13:52 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 46 seconds
+selectCodeEditor("Project_Electric_Fan.v", 362, 326); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("Project_Electric_Fan.v", 307, 340); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 317, 335, false, true, false, false, false); // ch (w, cr) - Control Key
+selectCodeEditor("Project_Electric_Fan.v", 488, 362); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 254, 337); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 302, 334); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 394, 338); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 259, 340); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 764 ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 14 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cr)
+// aW (cr): Cancel Implementation: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aW)
+dismissDialog("Cancel Implementation"); // aW (cr)
+// TclEventType: RUN_STEP_COMPLETED
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cr)
+// aW (cr): Cancel Implementation: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aW)
+dismissDialog("Cancel Implementation"); // aW (cr)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cr)
+// aW (cr): Cancel Implementation: addNotify
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a (aW)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // aW (cr)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Aug 14 10:15:53 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 10:15:53 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 208 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 36 seconds
+selectCodeEditor("Project_Electric_Fan.v", 445, 352); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Project_Electric_Fan.v", 407, 171); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 324, 144); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 219, 171); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 273, 170); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 224, 168); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("Project_Electric_Fan.v", 260, 173); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 284, 171); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Aug 14 10:21:22 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 10:21:22 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 213 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Project_Electric_Fan.v", 286, 174); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 274, 171); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Aug 14 10:25:20 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 10:25:20 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 207 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("Project_Electric_Fan.v", 74, 190); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 33, 184); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 12, 186); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 128, 187); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 271, 174); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 315, 163); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 302, 166); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Project_Electric_Fan.v", 133, 158); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 246, 155); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 445, 184); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectCodeEditor("Project_Electric_Fan.v", 239, 139); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 239, 139, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Project_Electric_Fan.v", 250, 146); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 250, 146, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 253, 186); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 297, 189); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 352, 187); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 346, 189); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("Project_Electric_Fan.v", 245, 202); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Aug 14 10:30:42 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 10:30:42 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 265, 140); // ch (w, cr)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cr)
+// bB (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// Elapsed time: 19 seconds
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 357, 141); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Project_Electric_Fan.v", 268, 141); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 351, 140); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("Project_Electric_Fan.v", 275, 143); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'c'); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 289, 190); // ch (w, cr)
+typeControlKey((HResource) null, "Project_Electric_Fan.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Resetting Runs"); // bB (cr)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Aug 14 10:31:44 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 10:31:44 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 210 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+// Elapsed time: 14 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 32 seconds
+selectCodeEditor("Project_Electric_Fan.v", 299, 191); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 399, 141); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Project_Electric_Fan.v", 215, 142); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("Project_Electric_Fan.v", 249, 187); // ch (w, cr)
+selectCodeEditor("Project_Electric_Fan.v", 261, 189); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Aug 14 10:36:47 2024] Launched synth_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/runme.log [Wed Aug 14 10:36:47 2024] Launched impl_1... Run output will be captured here: C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,326 MB. GUI used memory: 89 MB. Current time: 8/14/24, 10:37:57 AM KST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 202 seconds
+selectCodeEditor("Project_Electric_Fan.v", 269, 138); // ch (w, cr)
+// aj (cr): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectCodeEditor("Project_Electric_Fan.v", 275, 141); // ch (w, cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1/top_module_of_electric_fan.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 45 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cr)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1414 ms.
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectCodeEditor("Project_Electric_Fan.v", 250, 167); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

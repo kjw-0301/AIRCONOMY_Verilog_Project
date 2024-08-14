@@ -65,14 +65,14 @@ module top_module_of_electric_fan (
     
     // Declare Instance of module
     wire [1:0] power_duty, echo_duty;  // duty ratio of motor
-    wire [3:0] left_time;              // if current state is timer mode, this variable has data of lefted time.
-   wire rotation_enable;
+    wire [3:0] left_time;              // if current state is timer mode, this variable has data of lefted time
+    wire rotation_enable;
     power_cntr power_cntr_0 (.clk(clk), .reset_p(reset_p), .btn_power_enable(btn_power_pedge), .btn_timer_enable(btn_timer_pedge), .duty(power_duty), .left_time(left_time), .rotation_enable(rotation_enable));
     
     // current state 값에 따라 모터에 적용한 duty 값을 선택 
     wire [1:0] duty;
     assign duty = (current_state == ECHO_CONTROL) ? echo_duty : power_duty;
-    dht11_duty(.clk(clk),.reset_p(reset_p), .dht11_data(dht11),.echo_btn_enable(btn_echo_pedge),.duty(echo_duty));
+    dht11_duty d11(.clk(clk),.reset_p(reset_p), .dht11_data(dht11),.echo_btn_enable(btn_echo_pedge),.duty(echo_duty));
     
     // 변화된 모터의 duty값을 모터에 적용
     pwm_cntr #(.pwm_freq(100), .duty_step(4)) control_pwm (.clk(clk), .reset_p(reset_p), .duty(duty), .pwm(pwm));
@@ -94,6 +94,7 @@ module top_module_of_electric_fan (
                             (duty == 2'd2)? 4'b0100 : 4'b1000;
     assign led = led_blue;
     assign led_debug[7:4] = led_led_debug[7:4];
+   //assign led_debug[11:8] = current_state;
     
     
     // rotation instance
@@ -382,8 +383,8 @@ module fan_led(
     always @(posedge clk or posedge reset_p) begin
         if(reset_p) duty = 0;
         else if(btn_led) begin
-            if(duty>=90) duty =0;
-            else duty = duty + 30;
+            if(duty>=60) duty =0;
+            else duty = duty + 20;
         end
      end
      
@@ -392,9 +393,9 @@ module fan_led(
 
    //led
    assign led_debug[4] = (duty == 0);
-   assign led_debug[5] = (duty == 30);
-   assign led_debug[6] = (duty == 60);
-   assign led_debug[7] = (duty == 90);
+   assign led_debug[5] = (duty == 20);
+   assign led_debug[6] = (duty == 40);
+   assign led_debug[7] = (duty == 60);
    
    
    // use 3color
@@ -593,28 +594,51 @@ module dht11_duty(
     input echo_btn_enable,
     output reg[1:0]duty);
     
+    parameter ECHO_ON = 2'b01;
+    parameter ECHO_OFF = 2'b10;
+    
     wire [7:0] humidity, temperature; 
     dht11_cntrl dth11(.clk(clk), .reset_p(reset_p), .dht11_data(dht11_data), .humidity(humidity), .temperature(temperature));
     
-    wire [15:0] humidity_bcd, temperature_bcd;
+    wire[15:0] humidity_bcd, temperature_bcd;
     bin_to_dec bcd_humi(.bin({4'b0, humidity}),  .bcd(humidity_bcd));
     bin_to_dec bcd_temp(.bin({4'b0, temperature}),  .bcd(temperature_bcd));
     
-    wire[15:0] t_data = temperature_bcd;
-    wire[15:0] h_data = humidity_bcd;
+    wire[15:0] t_data; 
+    wire[15:0] h_data;
+    assign t_data = temperature_bcd;
+    assign h_data = humidity_bcd;
     reg echo_enable;
+    reg[2:0] ehco_state, ehco_next_state;
+    
     always@(posedge clk or posedge reset_p)begin
+        if(reset_p)ehco_state = ECHO_OFF;
+        else if(echo_btn_enable) ehco_state = ehco_next_state;
+    end
+
+    always@(negedge clk or posedge reset_p)begin
         if(reset_p)begin
-            duty <= 2'd0;
-            echo_enable = 0;
+            ehco_next_state = ECHO_ON;
+            duty = 2'd0;
         end
-        else if(echo_btn_enable) begin 
-            if(echo_enable)begin
-                if(t_data[7:0] >= 15'd32 && h_data[7:0] <= 15'd15) duty = 2'd0;
-                else if(t_data[7:0] >= 15'd31 && h_data[7:0] >= 15'd25) duty = 2'd3;
-                else if(t_data[7:0] >= 15'd28 && h_data[7:0] >= 15'd25) duty = 2'd2;
-                else if(t_data[7:0] >= 15'd25 && h_data[7:0] >= 15'd25) duty = 2'd1;
-            end
+        else begin 
+            case(ehco_state)
+                ECHO_ON: begin
+                    if(t_data >= 15'd20)begin
+                        duty = 2'd1;
+                    end
+                    else if(t_data >= 15'd24)begin 
+                        duty = 2'd2;
+                    end
+//                    else if(t_data >= 15'd28 || h_data >= 15'd25) duty = 2'd2;
+//                    else if(t_data >= 15'd25 || h_data >= 15'd25) duty = 2'd1;
+                    ehco_next_state = ECHO_OFF;
+                end
+                ECHO_OFF: begin
+                    duty = 2'd0;
+                    ehco_next_state = ECHO_ON;
+                end
+            endcase
         end
     end
     

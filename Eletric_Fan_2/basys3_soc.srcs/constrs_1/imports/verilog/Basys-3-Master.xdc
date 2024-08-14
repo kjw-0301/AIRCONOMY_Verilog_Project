@@ -39,7 +39,7 @@ set_property -dict { PACKAGE_PIN V14   IOSTANDARD LVCMOS33 } [get_ports {led_deb
 set_property -dict { PACKAGE_PIN V13   IOSTANDARD LVCMOS33 } [get_ports {led_debug[8]}]
 set_property -dict { PACKAGE_PIN V3    IOSTANDARD LVCMOS33 } [get_ports {led_debug[9]}]
 set_property -dict { PACKAGE_PIN W3    IOSTANDARD LVCMOS33 } [get_ports {led_debug[10]}]
-#set_property -dict { PACKAGE_PIN U3    IOSTANDARD LVCMOS33 } [get_ports {led_debug[11]}]
+set_property -dict { PACKAGE_PIN U3    IOSTANDARD LVCMOS33 } [get_ports {led_debug[11]}]
 #set_property -dict { PACKAGE_PIN P3    IOSTANDARD LVCMOS33 } [get_ports {led_debug[12]}]
 #set_property -dict { PACKAGE_PIN N3    IOSTANDARD LVCMOS33 } [get_ports {led_debug[13]}]
 #set_property -dict { PACKAGE_PIN P1    IOSTANDARD LVCMOS33 } [get_ports {led_debug[14]}]
@@ -74,7 +74,7 @@ set_property -dict { PACKAGE_PIN U17   IOSTANDARD LVCMOS33 } [get_ports btn[3]]
 ##Pmod Header JA
 set_property -dict { PACKAGE_PIN J1   IOSTANDARD LVCMOS33 } [get_ports {pwm}];#Sch name = JA1
 set_property -dict { PACKAGE_PIN L2   IOSTANDARD LVCMOS33 } [get_ports {led}];#Sch name = JA2
-#set_property -dict { PACKAGE_PIN J2   IOSTANDARD LVCMOS33 } [get_ports {JA[2]}];#Sch name = JA3
+set_property -dict { PACKAGE_PIN J2   IOSTANDARD LVCMOS33 } [get_ports {rotation}];#Sch name = JA3
 #set_property -dict { PACKAGE_PIN G2   IOSTANDARD LVCMOS33 } [get_ports {motor_pwm}];#Sch name = JA4
 #set_property -dict { PACKAGE_PIN H1   IOSTANDARD LVCMOS33 } [get_ports {led}];#Sch name = JA7
 #set_property -dict { PACKAGE_PIN K2   IOSTANDARD LVCMOS33 } [get_ports {led_g}];#Sch name = JA8
