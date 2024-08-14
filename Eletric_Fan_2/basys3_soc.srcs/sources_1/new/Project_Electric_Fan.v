@@ -71,8 +71,10 @@ module top_module_of_electric_fan (
     
     // current state 값에 따라 모터에 적용한 duty 값을 선택 
     wire [1:0] duty;
+    wire [15:0]temp_data;
     assign duty = (current_state == ECHO_CONTROL) ? echo_duty : power_duty;
-    dht11_duty(.clk(clk),.reset_p(reset_p), .dht11_data(dht11),.echo_btn_enable(btn_echo_pedge),.duty(echo_duty));
+    dht11_duty(.clk(clk),.reset_p(reset_p), .dht11_data(dht11),.echo_btn_enable(btn_echo_pedge),.duty(echo_duty),.t_data_out(temp_data));
+    
     
     // 변화된 모터의 duty값을 모터에 적용
     pwm_cntr #(.pwm_freq(100), .duty_step(4)) control_pwm (.clk(clk), .reset_p(reset_p), .duty(duty), .pwm(pwm));
@@ -591,25 +593,26 @@ module dht11_duty(
     input clk, reset_p, 
     inout dht11_data,
     input echo_btn_enable,
+    output t_data_out,
     output reg[1:0]duty);
-    
+
     parameter ECHO_ON = 2'b01;
     parameter ECHO_OFF = 2'b10;
-    
+
     wire [7:0] humidity, temperature; 
     dht11_cntrl dth11(.clk(clk), .reset_p(reset_p), .dht11_data(dht11_data), .humidity(humidity), .temperature(temperature));
-    
-    wire[15:0] humidity_bcd, temperature_bcd;
-    bin_to_dec bcd_humi(.bin({4'b0, humidity}),  .bcd(humidity_bcd));
-    bin_to_dec bcd_temp(.bin({4'b0, temperature}),  .bcd(temperature_bcd));
-    
-    wire[15:0] t_data; 
-    wire[15:0] h_data;
-    assign t_data = temperature_bcd;
-    assign h_data = humidity_bcd;
+
+//    wire[15:0] humidity_bcd, temperature_bcd;
+//    bin_to_dec bcd_humi(.bin({4'b0, humidity}),  .bcd(humidity_bcd));
+//    bin_to_dec bcd_temp(.bin({4'b0, temperature}),  .bcd(temperature_bcd));
+
+    wire[7:0] temperature_data; 
+    wire[7:0] humidity_data;
+    assign temperature_data = temperature;
+    assign humidity_data = humidity;
     reg echo_enable;
     reg[2:0] ehco_state, ehco_next_state;
-    
+
     always@(posedge clk or posedge reset_p)begin
         if(reset_p)ehco_state = ECHO_OFF;
         else if(echo_btn_enable) ehco_state = ehco_next_state;
@@ -623,14 +626,11 @@ module dht11_duty(
         else begin 
             case(ehco_state)
                 ECHO_ON: begin
-                    if(t_data >= 15'd20)begin
-                        duty = 2'd1;
-                    end
-                    else if(t_data >= 15'd24)begin 
-                        duty = 2'd2;
-                    end
-//                    else if(t_data >= 15'd28 || h_data >= 15'd25) duty = 2'd2;
-//                    else if(t_data >= 15'd25 || h_data >= 15'd25) duty = 2'd1;
+                    if(8'd25 <= temperature_data && temperature_data <= 8'd26) duty = 2'd1;
+                    else if(8'd27 <= temperature_data && temperature_data <= 8'd29) duty = 2'd2;
+                    else if(temperature_data > 8'd32) duty = 2'd3;
+//                    else if(t_data >= 15'd28  h_data >= 15'd25) duty = 2'd2;
+//                    else if(t_data >= 15'd25  h_data >= 15'd25) duty = 2'd1;
                     ehco_next_state = ECHO_OFF;
                 end
                 ECHO_OFF: begin
@@ -642,6 +642,7 @@ module dht11_duty(
     end
     
 endmodule
+    
     
 
 

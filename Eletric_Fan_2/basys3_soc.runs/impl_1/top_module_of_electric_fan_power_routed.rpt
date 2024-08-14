@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed Aug 14 09:11:22 2024
-| Host             : Ingusto running 64-bit major release  (build 9200)
+| Date             : Wed Aug 14 12:25:25 2024
+| Host             : DESKTOP-VQQPT2C running 64-bit major release  (build 9200)
 | Command          : report_power -file top_module_of_electric_fan_power_routed.rpt -pb top_module_of_electric_fan_power_summary_routed.pb -rpx top_module_of_electric_fan_power_routed.rpx
 | Design           : top_module_of_electric_fan
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.083        |
+| Total On-Chip Power (W)  | 0.084        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.011        |
+| Dynamic (W)              | 0.012        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |     1066 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      469 |     20800 |            2.25 |
-|   CARRY4       |    <0.001 |       97 |      8150 |            1.19 |
-|   Register     |    <0.001 |      359 |     41600 |            0.86 |
-|   Others       |     0.000 |       35 |       --- |             --- |
-| Signals        |    <0.001 |      559 |       --- |             --- |
-| I/O            |     0.006 |       31 |       106 |           29.25 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |     0.001 |     1195 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      547 |     20800 |            2.63 |
+|   CARRY4       |    <0.001 |       90 |      8150 |            1.10 |
+|   Register     |    <0.001 |      394 |     41600 |            0.95 |
+|   Others       |     0.000 |       33 |       --- |             --- |
+| Signals        |    <0.001 |      680 |       --- |             --- |
+| I/O            |     0.008 |       31 |       106 |           29.25 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.083 |          |           |                 |
+| Total          |     0.084 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.015 |       0.005 |      0.010 |
+| Vccint    |       1.000 |     0.014 |       0.004 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,8 +140,8 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| top_module_of_electric_fan |     0.011 |
-|   nolabel_line100          |     0.001 |
+| top_module_of_electric_fan |     0.012 |
+|   nolabel_line102          |     0.001 |
 +----------------------------+-----------+
 
 
