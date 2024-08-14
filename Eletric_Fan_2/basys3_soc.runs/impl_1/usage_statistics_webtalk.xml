@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< Updated upstream
 <webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Tue Aug 13 16:28:40 2024'>
+=======
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Aug 14 10:01:45 2024'>
+>>>>>>> Stashed changes
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="2708876" description="" />
+<<<<<<< Updated upstream
   <keyValuePair key="date_generated" value="Tue Aug 13 16:28:40 2024" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2019.2 (64-bit)" description="" />
@@ -11,6 +16,15 @@
   <keyValuePair key="project_iteration" value="236" description="" />
   <keyValuePair key="random_id" value="5d8892d8ed425e83b9926098ffbdd808" description="" />
   <keyValuePair key="registration_id" value="5d8892d8ed425e83b9926098ffbdd808" description="" />
+=======
+  <keyValuePair key="date_generated" value="Wed Aug 14 10:01:45 2024" description="" />
+  <keyValuePair key="os_platform" value="WIN64" description="" />
+  <keyValuePair key="product_version" value="Vivado v2019.2 (64-bit)" description="" />
+  <keyValuePair key="project_id" value="b390489df8fb4c22bf0e6cb806c7bc85" description="" />
+  <keyValuePair key="project_iteration" value="239" description="" />
+  <keyValuePair key="random_id" value="5c13f588166c506d89098fc20aa66dcb" description="" />
+  <keyValuePair key="registration_id" value="5c13f588166c506d89098fc20aa66dcb" description="" />
+>>>>>>> Stashed changes
   <keyValuePair key="route_design" value="TRUE" description="" />
   <keyValuePair key="target_device" value="xc7a35t" description="" />
   <keyValuePair key="target_family" value="artix7" description="" />
@@ -19,11 +33,19 @@
   <keyValuePair key="tool_flow" value="Vivado" description="" />
  </section>
  <section name="user_environment" level="1" order="2" description="">
+<<<<<<< Updated upstream
   <keyValuePair key="cpu_name" value="AMD Ryzen 7 8845HS w/ Radeon 780M Graphics     " description="" />
   <keyValuePair key="cpu_speed" value="3793 MHz" description="" />
   <keyValuePair key="os_name" value="Windows Server 2016 or Windows 10" description="" />
   <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
   <keyValuePair key="system_ram" value="33.000 GB" description="" />
+=======
+  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz" description="" />
+  <keyValuePair key="cpu_speed" value="2712 MHz" description="" />
+  <keyValuePair key="os_name" value="Windows Server 2016 or Windows 10" description="" />
+  <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
+  <keyValuePair key="system_ram" value="17.000 GB" description="" />
+>>>>>>> Stashed changes
   <keyValuePair key="total_processors" value="1" description="" />
  </section>
  <section name="phys_opt_design_post_place" level="1" order="3" description="">
@@ -109,7 +131,11 @@
    <keyValuePair key="bidir_output_enable" value="1.000000" description="" />
    <keyValuePair key="board_layers" value="12to15 (12 to 15 Layers)" description="" />
    <keyValuePair key="board_selection" value="medium (10&quot;x10&quot;)" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="clocks" value="0.001301" description="" />
+=======
+   <keyValuePair key="clocks" value="0.003079" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="confidence_level_clock_activity" value="High" description="" />
    <keyValuePair key="confidence_level_design_state" value="High" description="" />
    <keyValuePair key="confidence_level_device_models" value="High" description="" />
@@ -118,20 +144,34 @@
    <keyValuePair key="confidence_level_overall" value="Low" description="" />
    <keyValuePair key="customer" value="TBD" description="" />
    <keyValuePair key="customer_class" value="TBD" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="devstatic" value="0.071718" description="" />
    <keyValuePair key="die" value="xc7a35tcpg236-1" description="" />
    <keyValuePair key="dsp_output_toggle" value="12.500000" description="" />
    <keyValuePair key="dynamic" value="0.008063" description="" />
+=======
+   <keyValuePair key="devstatic" value="0.071726" description="" />
+   <keyValuePair key="die" value="xc7a35tcpg236-1" description="" />
+   <keyValuePair key="dsp_output_toggle" value="12.500000" description="" />
+   <keyValuePair key="dynamic" value="0.012021" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="effective_thetaja" value="5.0" description="" />
    <keyValuePair key="enable_probability" value="0.990000" description="" />
    <keyValuePair key="family" value="artix7" description="" />
    <keyValuePair key="ff_toggle" value="12.500000" description="" />
    <keyValuePair key="flow_state" value="routed" description="" />
    <keyValuePair key="heatsink" value="medium (Medium Profile)" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="i/o" value="0.005832" description="" />
    <keyValuePair key="input_toggle" value="12.500000" description="" />
    <keyValuePair key="junction_temp" value="25.4 (C)" description="" />
    <keyValuePair key="logic" value="0.000508" description="" />
+=======
+   <keyValuePair key="i/o" value="0.006913" description="" />
+   <keyValuePair key="input_toggle" value="12.500000" description="" />
+   <keyValuePair key="junction_temp" value="25.4 (C)" description="" />
+   <keyValuePair key="logic" value="0.001163" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="mgtavcc_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="mgtavcc_static_current" value="0.000000" description="" />
    <keyValuePair key="mgtavcc_total_current" value="0.000000" description="" />
@@ -142,13 +182,22 @@
    <keyValuePair key="mgtavtt_voltage" value="1.200000" description="" />
    <keyValuePair key="netlist_net_matched" value="NA" description="" />
    <keyValuePair key="off-chip_power" value="0.000000" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="on-chip_power" value="0.079781" description="" />
+=======
+   <keyValuePair key="on-chip_power" value="0.083747" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="output_enable" value="1.000000" description="" />
    <keyValuePair key="output_load" value="5.000000" description="" />
    <keyValuePair key="output_toggle" value="12.500000" description="" />
    <keyValuePair key="package" value="cpg236" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="pct_clock_constrained" value="0.000000" description="" />
    <keyValuePair key="pct_inputs_defined" value="16" description="" />
+=======
+   <keyValuePair key="pct_clock_constrained" value="1.000000" description="" />
+   <keyValuePair key="pct_inputs_defined" value="12" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="platform" value="nt64" description="" />
    <keyValuePair key="process" value="typical" description="" />
    <keyValuePair key="ram_enable" value="50.000000" description="" />
@@ -156,7 +205,11 @@
    <keyValuePair key="read_saif" value="False" description="" />
    <keyValuePair key="set/reset_probability" value="0.000000" description="" />
    <keyValuePair key="signal_rate" value="False" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="signals" value="0.000422" description="" />
+=======
+   <keyValuePair key="signals" value="0.000866" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="simulation_file" value="None" description="" />
    <keyValuePair key="speedgrade" value="-1" description="" />
    <keyValuePair key="static_prob" value="False" description="" />
@@ -173,21 +226,35 @@
    <keyValuePair key="vccadc_static_current" value="0.020000" description="" />
    <keyValuePair key="vccadc_total_current" value="0.020000" description="" />
    <keyValuePair key="vccadc_voltage" value="1.800000" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="vccaux_dynamic_current" value="0.000211" description="" />
+=======
+   <keyValuePair key="vccaux_dynamic_current" value="0.000250" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="vccaux_io_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="vccaux_io_static_current" value="0.000000" description="" />
    <keyValuePair key="vccaux_io_total_current" value="0.000000" description="" />
    <keyValuePair key="vccaux_io_voltage" value="1.800000" description="" />
    <keyValuePair key="vccaux_static_current" value="0.012616" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="vccaux_total_current" value="0.012827" description="" />
+=======
+   <keyValuePair key="vccaux_total_current" value="0.012866" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="vccaux_voltage" value="1.800000" description="" />
    <keyValuePair key="vccbram_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="vccbram_static_current" value="0.000162" description="" />
    <keyValuePair key="vccbram_total_current" value="0.000162" description="" />
    <keyValuePair key="vccbram_voltage" value="1.000000" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="vccint_dynamic_current" value="0.002311" description="" />
    <keyValuePair key="vccint_static_current" value="0.009548" description="" />
    <keyValuePair key="vccint_total_current" value="0.011859" description="" />
+=======
+   <keyValuePair key="vccint_dynamic_current" value="0.005192" description="" />
+   <keyValuePair key="vccint_static_current" value="0.009555" description="" />
+   <keyValuePair key="vccint_total_current" value="0.014747" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="vccint_voltage" value="1.000000" description="" />
    <keyValuePair key="vcco12_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="vcco12_static_current" value="0.000000" description="" />
@@ -209,9 +276,15 @@
    <keyValuePair key="vcco25_static_current" value="0.000000" description="" />
    <keyValuePair key="vcco25_total_current" value="0.000000" description="" />
    <keyValuePair key="vcco25_voltage" value="2.500000" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="vcco33_dynamic_current" value="0.001628" description="" />
    <keyValuePair key="vcco33_static_current" value="0.001000" description="" />
    <keyValuePair key="vcco33_total_current" value="0.002628" description="" />
+=======
+   <keyValuePair key="vcco33_dynamic_current" value="0.001933" description="" />
+   <keyValuePair key="vcco33_static_current" value="0.001000" description="" />
+   <keyValuePair key="vcco33_total_current" value="0.002933" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="vcco33_voltage" value="3.300000" description="" />
    <keyValuePair key="version" value="2019.2" description="" />
   </section>
@@ -326,7 +399,11 @@
    <keyValuePair key="lut3_functional_category" value="LUT" description="" />
    <keyValuePair key="lut3_used" value="10" description="" />
    <keyValuePair key="lut4_functional_category" value="LUT" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="lut4_used" value="17" description="" />
+=======
+   <keyValuePair key="lut4_used" value="67" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="lut5_functional_category" value="LUT" description="" />
    <keyValuePair key="lut5_used" value="31" description="" />
    <keyValuePair key="lut6_functional_category" value="LUT" description="" />
@@ -351,10 +428,17 @@
    <keyValuePair key="lut_as_logic_available" value="20800" description="" />
    <keyValuePair key="lut_as_logic_fixed" value="0" description="" />
    <keyValuePair key="lut_as_logic_fixed" value="0" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="lut_as_logic_used" value="211" description="" />
    <keyValuePair key="lut_as_logic_used" value="211" description="" />
    <keyValuePair key="lut_as_logic_util_percentage" value="1.01" description="" />
    <keyValuePair key="lut_as_logic_util_percentage" value="1.01" description="" />
+=======
+   <keyValuePair key="lut_as_logic_used" value="470" description="" />
+   <keyValuePair key="lut_as_logic_used" value="470" description="" />
+   <keyValuePair key="lut_as_logic_util_percentage" value="2.26" description="" />
+   <keyValuePair key="lut_as_logic_util_percentage" value="2.26" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="lut_as_memory_available" value="9600" description="" />
    <keyValuePair key="lut_as_memory_available" value="9600" description="" />
    <keyValuePair key="lut_as_memory_fixed" value="0" description="" />
@@ -368,7 +452,11 @@
    <keyValuePair key="lut_in_front_of_the_register_is_unused_fixed" value="0" description="" />
    <keyValuePair key="lut_in_front_of_the_register_is_unused_used" value="12" description="" />
    <keyValuePair key="lut_in_front_of_the_register_is_used_fixed" value="12" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="lut_in_front_of_the_register_is_used_used" value="12" description="" />
+=======
+   <keyValuePair key="lut_in_front_of_the_register_is_used_used" value="26" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="register_as_flip_flop_available" value="41600" description="" />
    <keyValuePair key="register_as_flip_flop_fixed" value="0" description="" />
    <keyValuePair key="register_as_flip_flop_used" value="164" description="" />
@@ -377,20 +465,33 @@
    <keyValuePair key="register_as_latch_fixed" value="0" description="" />
    <keyValuePair key="register_as_latch_used" value="0" description="" />
    <keyValuePair key="register_as_latch_util_percentage" value="0.00" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="register_driven_from_outside_the_slice_fixed" value="12" description="" />
    <keyValuePair key="register_driven_from_outside_the_slice_used" value="24" description="" />
    <keyValuePair key="register_driven_from_within_the_slice_fixed" value="24" description="" />
    <keyValuePair key="register_driven_from_within_the_slice_used" value="140" description="" />
+=======
+   <keyValuePair key="register_driven_from_outside_the_slice_fixed" value="26" description="" />
+   <keyValuePair key="register_driven_from_outside_the_slice_used" value="38" description="" />
+   <keyValuePair key="register_driven_from_within_the_slice_fixed" value="38" description="" />
+   <keyValuePair key="register_driven_from_within_the_slice_used" value="321" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="slice_available" value="8150" description="" />
    <keyValuePair key="slice_fixed" value="0" description="" />
    <keyValuePair key="slice_luts_available" value="20800" description="" />
    <keyValuePair key="slice_luts_fixed" value="0" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="slice_luts_used" value="211" description="" />
    <keyValuePair key="slice_luts_util_percentage" value="1.01" description="" />
+=======
+   <keyValuePair key="slice_luts_used" value="470" description="" />
+   <keyValuePair key="slice_luts_util_percentage" value="2.26" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="slice_registers_available" value="41600" description="" />
    <keyValuePair key="slice_registers_available" value="41600" description="" />
    <keyValuePair key="slice_registers_fixed" value="0" description="" />
    <keyValuePair key="slice_registers_fixed" value="0" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="slice_registers_used" value="164" description="" />
    <keyValuePair key="slice_registers_used" value="164" description="" />
    <keyValuePair key="slice_registers_util_percentage" value="0.39" description="" />
@@ -411,6 +512,28 @@
    <keyValuePair key="using_o5_output_only_used" value="0" description="" />
    <keyValuePair key="using_o6_output_only_fixed" value="0" description="" />
    <keyValuePair key="using_o6_output_only_used" value="155" description="" />
+=======
+   <keyValuePair key="slice_registers_used" value="359" description="" />
+   <keyValuePair key="slice_registers_used" value="359" description="" />
+   <keyValuePair key="slice_registers_util_percentage" value="0.86" description="" />
+   <keyValuePair key="slice_registers_util_percentage" value="0.86" description="" />
+   <keyValuePair key="slice_used" value="165" description="" />
+   <keyValuePair key="slice_util_percentage" value="2.02" description="" />
+   <keyValuePair key="slicel_fixed" value="0" description="" />
+   <keyValuePair key="slicel_used" value="107" description="" />
+   <keyValuePair key="slicem_fixed" value="0" description="" />
+   <keyValuePair key="slicem_used" value="58" description="" />
+   <keyValuePair key="unique_control_sets_available" value="8150" description="" />
+   <keyValuePair key="unique_control_sets_fixed" value="8150" description="" />
+   <keyValuePair key="unique_control_sets_used" value="20" description="" />
+   <keyValuePair key="unique_control_sets_util_percentage" value="0.25" description="" />
+   <keyValuePair key="using_o5_and_o6_fixed" value="0.25" description="" />
+   <keyValuePair key="using_o5_and_o6_used" value="107" description="" />
+   <keyValuePair key="using_o5_output_only_fixed" value="107" description="" />
+   <keyValuePair key="using_o5_output_only_used" value="3" description="" />
+   <keyValuePair key="using_o6_output_only_fixed" value="3" description="" />
+   <keyValuePair key="using_o6_output_only_used" value="360" description="" />
+>>>>>>> Stashed changes
   </section>
   <section name="specific_feature" level="2" order="7" description="">
    <keyValuePair key="bscane2_available" value="4" description="" />
@@ -489,15 +612,23 @@
    <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
+<<<<<<< Updated upstream
    <keyValuePair key="elapsed" value="00:00:19s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
    <keyValuePair key="memory_gain" value="672.977MB" description="" />
    <keyValuePair key="memory_peak" value="1345.746MB" description="" />
+=======
+   <keyValuePair key="elapsed" value="00:00:47s" description="" />
+   <keyValuePair key="hls_ip" value="0" description="" />
+   <keyValuePair key="memory_gain" value="695.141MB" description="" />
+   <keyValuePair key="memory_peak" value="1102.016MB" description="" />
+>>>>>>> Stashed changes
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="9" description="">
   <section name="post_unisim_transformation" level="2" order="1" description="">
    <keyValuePair key="bufg" value="1" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="carry4" value="39" description="" />
    <keyValuePair key="fdce" value="132" description="" />
    <keyValuePair key="fdpe" value="8" description="" />
@@ -511,11 +642,27 @@
    <keyValuePair key="lut5" value="31" description="" />
    <keyValuePair key="lut6" value="32" description="" />
    <keyValuePair key="obuf" value="17" description="" />
+=======
+   <keyValuePair key="carry4" value="97" description="" />
+   <keyValuePair key="fdce" value="278" description="" />
+   <keyValuePair key="fdpe" value="15" description="" />
+   <keyValuePair key="fdre" value="65" description="" />
+   <keyValuePair key="gnd" value="9" description="" />
+   <keyValuePair key="ibuf" value="8" description="" />
+   <keyValuePair key="lut1" value="18" description="" />
+   <keyValuePair key="lut2" value="354" description="" />
+   <keyValuePair key="lut3" value="18" description="" />
+   <keyValuePair key="lut4" value="67" description="" />
+   <keyValuePair key="lut5" value="34" description="" />
+   <keyValuePair key="lut6" value="88" description="" />
+   <keyValuePair key="obuf" value="23" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="obuft" value="1" description="" />
    <keyValuePair key="vcc" value="14" description="" />
   </section>
   <section name="pre_unisim_transformation" level="2" order="2" description="">
    <keyValuePair key="bufg" value="1" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="carry4" value="39" description="" />
    <keyValuePair key="fdce" value="132" description="" />
    <keyValuePair key="fdpe" value="8" description="" />
@@ -531,6 +678,23 @@
    <keyValuePair key="obuf" value="17" description="" />
    <keyValuePair key="obuft" value="1" description="" />
    <keyValuePair key="vcc" value="14" description="" />
+=======
+   <keyValuePair key="carry4" value="97" description="" />
+   <keyValuePair key="fdce" value="278" description="" />
+   <keyValuePair key="fdpe" value="15" description="" />
+   <keyValuePair key="fdre" value="65" description="" />
+   <keyValuePair key="gnd" value="9" description="" />
+   <keyValuePair key="ibuf" value="7" description="" />
+   <keyValuePair key="iobuf" value="1" description="" />
+   <keyValuePair key="lut1" value="18" description="" />
+   <keyValuePair key="lut2" value="354" description="" />
+   <keyValuePair key="lut3" value="18" description="" />
+   <keyValuePair key="lut4" value="67" description="" />
+   <keyValuePair key="lut5" value="34" description="" />
+   <keyValuePair key="lut6" value="88" description="" />
+   <keyValuePair key="obuf" value="23" description="" />
+   <keyValuePair key="vcc" value="26" description="" />
+>>>>>>> Stashed changes
   </section>
  </section>
  <section name="vivado_usage" level="1" order="10" description="">
@@ -543,21 +707,36 @@
    <keyValuePair key="basedialog_apply" value="3" description="" />
    <keyValuePair key="basedialog_cancel" value="140" description="" />
    <keyValuePair key="basedialog_no" value="14" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="basedialog_ok" value="827" description="" />
    <keyValuePair key="basedialog_yes" value="319" description="" />
    <keyValuePair key="boardchooser_board_table" value="8" description="" />
    <keyValuePair key="boardchooser_update_board_repositories" value="1" description="" />
    <keyValuePair key="closeplanner_yes" value="4" description="" />
    <keyValuePair key="cmdmsgdialog_ok" value="29" description="" />
+=======
+   <keyValuePair key="basedialog_ok" value="833" description="" />
+   <keyValuePair key="basedialog_yes" value="321" description="" />
+   <keyValuePair key="boardchooser_board_table" value="8" description="" />
+   <keyValuePair key="boardchooser_update_board_repositories" value="1" description="" />
+   <keyValuePair key="closeplanner_yes" value="4" description="" />
+   <keyValuePair key="cmdmsgdialog_ok" value="31" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="commandsinput_type_tcl_command_here" value="3" description="" />
    <keyValuePair key="constraintschooserpanel_add_files" value="1" description="" />
    <keyValuePair key="constraintschooserpanel_copy_constraints_files_into_project" value="1" description="" />
    <keyValuePair key="coretreetablepanel_core_tree_table" value="8" description="" />
    <keyValuePair key="createsrcfiledialog_file_name" value="16" description="" />
    <keyValuePair key="expruntreepanel_exp_run_tree_table" value="8" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="filesetpanel_file_set_panel_tree" value="1004" description="" />
    <keyValuePair key="filesetview_expand_all" value="1" description="" />
    <keyValuePair key="flownavigatortreepanel_flow_navigator_tree" value="724" description="" />
+=======
+   <keyValuePair key="filesetpanel_file_set_panel_tree" value="1057" description="" />
+   <keyValuePair key="filesetview_expand_all" value="1" description="" />
+   <keyValuePair key="flownavigatortreepanel_flow_navigator_tree" value="729" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="gettingstartedview_create_new_project" value="2" description="" />
    <keyValuePair key="graphicalview_zoom_fit" value="205" description="" />
    <keyValuePair key="graphicalview_zoom_in" value="408" description="" />
@@ -583,12 +762,12 @@
    <keyValuePair key="pacodeeditor_goto_definition" value="116" description="" />
    <keyValuePair key="pacommandnames_add_config_memory" value="7" description="" />
    <keyValuePair key="pacommandnames_add_sources" value="16" description="" />
-   <keyValuePair key="pacommandnames_auto_connect_target" value="141" description="" />
+   <keyValuePair key="pacommandnames_auto_connect_target" value="143" description="" />
    <keyValuePair key="pacommandnames_auto_update_hier" value="115" description="" />
    <keyValuePair key="pacommandnames_customize_core" value="1" description="" />
    <keyValuePair key="pacommandnames_goto_netlist_design" value="2" description="" />
    <keyValuePair key="pacommandnames_message_window" value="7" description="" />
-   <keyValuePair key="pacommandnames_open_hardware_manager" value="17" description="" />
+   <keyValuePair key="pacommandnames_open_hardware_manager" value="19" description="" />
    <keyValuePair key="pacommandnames_open_project" value="2" description="" />
    <keyValuePair key="pacommandnames_program_fpga" value="5" description="" />
    <keyValuePair key="pacommandnames_run_bitgen" value="2" description="" />
@@ -607,12 +786,21 @@
    <keyValuePair key="paviews_code" value="65" description="" />
    <keyValuePair key="paviews_device" value="6" description="" />
    <keyValuePair key="paviews_ip_catalog" value="1" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="paviews_project_summary" value="175" description="" />
    <keyValuePair key="programdebugtab_available_targets_on_server" value="4" description="" />
    <keyValuePair key="programdebugtab_open_target" value="57" description="" />
    <keyValuePair key="programdebugtab_program_device" value="256" description="" />
    <keyValuePair key="programdebugtab_refresh_device" value="1" description="" />
    <keyValuePair key="programfpgadialog_program" value="245" description="" />
+=======
+   <keyValuePair key="paviews_project_summary" value="177" description="" />
+   <keyValuePair key="programdebugtab_available_targets_on_server" value="4" description="" />
+   <keyValuePair key="programdebugtab_open_target" value="58" description="" />
+   <keyValuePair key="programdebugtab_program_device" value="264" description="" />
+   <keyValuePair key="programdebugtab_refresh_device" value="1" description="" />
+   <keyValuePair key="programfpgadialog_program" value="253" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="programfpgadialog_specify_bitstream_file" value="4" description="" />
    <keyValuePair key="progressdialog_background" value="1" description="" />
    <keyValuePair key="progressdialog_cancel" value="11" description="" />
@@ -669,22 +857,30 @@
   <section name="java_command_handlers" level="2" order="2" description="">
    <keyValuePair key="addcfgmem" value="1" description="" />
    <keyValuePair key="addsources" value="16" description="" />
-   <keyValuePair key="autoconnecttarget" value="141" description="" />
+   <keyValuePair key="autoconnecttarget" value="143" description="" />
    <keyValuePair key="closeproject" value="1" description="" />
    <keyValuePair key="coreview" value="3" description="" />
    <keyValuePair key="customizecore" value="3" description="" />
    <keyValuePair key="editcopy" value="11" description="" />
    <keyValuePair key="editpaste" value="6" description="" />
    <keyValuePair key="editundo" value="23" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="launchprogramfpga" value="254" description="" />
+=======
+   <keyValuePair key="launchprogramfpga" value="262" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="newproject" value="2" description="" />
-   <keyValuePair key="openhardwaremanager" value="129" description="" />
+   <keyValuePair key="openhardwaremanager" value="131" description="" />
    <keyValuePair key="openproject" value="2" description="" />
    <keyValuePair key="openrecenttarget" value="114" description="" />
    <keyValuePair key="programdevice" value="2" description="" />
    <keyValuePair key="recustomizecore" value="4" description="" />
    <keyValuePair key="resetlayout" value="1" description="" />
+<<<<<<< Updated upstream
    <keyValuePair key="runbitgen" value="349" description="" />
+=======
+   <keyValuePair key="runbitgen" value="354" description="" />
+>>>>>>> Stashed changes
    <keyValuePair key="runimplementation" value="2" description="" />
    <keyValuePair key="runschematic" value="4" description="" />
    <keyValuePair key="runsynthesis" value="17" description="" />
@@ -708,7 +904,11 @@
    <keyValuePair key="zoomout" value="3" description="" />
   </section>
   <section name="other_data" level="2" order="3" description="">
+<<<<<<< Updated upstream
    <keyValuePair key="guimode" value="63" description="" />
+=======
+   <keyValuePair key="guimode" value="70" description="" />
+>>>>>>> Stashed changes
   </section>
   <section name="project_data" level="2" order="4" description="">
    <keyValuePair key="constraintsetcount" value="1" description="" />

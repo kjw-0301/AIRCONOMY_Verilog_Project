@@ -1,8 +1,13 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+<<<<<<< Updated upstream
 | Date             : Tue Aug 13 16:28:33 2024
 | Host             : DESKTOP-5VNL0D5 running 64-bit major release  (build 9200)
+=======
+| Date             : Wed Aug 14 10:01:32 2024
+| Host             : DESKTOP-VQQPT2C running 64-bit major release  (build 9200)
+>>>>>>> Stashed changes
 | Command          : report_power -file top_module_of_electric_fan_power_routed.rpt -pb top_module_of_electric_fan_power_summary_routed.pb -rpx top_module_of_electric_fan_power_routed.rpx
 | Design           : top_module_of_electric_fan
 | Device           : xc7a35tcpg236-1
@@ -30,10 +35,17 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
+<<<<<<< Updated upstream
 | Total On-Chip Power (W)  | 0.080        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.008        |
+=======
+| Total On-Chip Power (W)  | 0.084        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.012        |
+>>>>>>> Stashed changes
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -52,6 +64,7 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
+<<<<<<< Updated upstream
 | Clocks         |     0.001 |        3 |       --- |             --- |
 | Slice Logic    |    <0.001 |      489 |       --- |             --- |
 |   LUT as Logic |    <0.001 |      211 |     20800 |            1.01 |
@@ -62,6 +75,18 @@ Table of Contents
 | I/O            |     0.006 |       24 |       106 |           22.64 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.080 |          |           |                 |
+=======
+| Clocks         |     0.003 |        3 |       --- |             --- |
+| Slice Logic    |     0.001 |     1068 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      470 |     20800 |            2.26 |
+|   CARRY4       |    <0.001 |       97 |      8150 |            1.19 |
+|   Register     |    <0.001 |      359 |     41600 |            0.86 |
+|   Others       |     0.000 |       35 |       --- |             --- |
+| Signals        |    <0.001 |      563 |       --- |             --- |
+| I/O            |     0.007 |       31 |       106 |           29.25 |
+| Static Power   |     0.072 |          |           |                 |
+| Total          |     0.084 |          |           |                 |
+>>>>>>> Stashed changes
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -140,7 +165,13 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
+<<<<<<< Updated upstream
 | top_module_of_electric_fan |     0.008 |
+=======
+| top_module_of_electric_fan |     0.012 |
+|   nolabel_line100          |     0.001 |
+|     pwm_rotation           |     0.001 |
+>>>>>>> Stashed changes
 +----------------------------+-----------+
 
 

@@ -1,8 +1,13 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+<<<<<<< Updated upstream
 | Date         : Tue Aug 13 16:28:19 2024
 | Host         : DESKTOP-5VNL0D5 running 64-bit major release  (build 9200)
+=======
+| Date         : Wed Aug 14 10:01:00 2024
+| Host         : DESKTOP-VQQPT2C running 64-bit major release  (build 9200)
+>>>>>>> Stashed changes
 | Command      : report_control_sets -verbose -file top_module_of_electric_fan_control_sets_placed.rpt
 | Design       : top_module_of_electric_fan
 | Device       : xc7a35t
@@ -58,11 +63,19 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
+<<<<<<< Updated upstream
 | No           | No                    | No                     |              19 |            7 |
 | No           | No                    | Yes                    |              68 |           25 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               4 |            1 |
 | Yes          | No                    | Yes                    |              73 |           23 |
+=======
+| No           | No                    | No                     |              61 |           19 |
+| No           | No                    | Yes                    |             131 |           47 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               4 |            1 |
+| Yes          | No                    | Yes                    |             163 |           51 |
+>>>>>>> Stashed changes
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,6 +83,7 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
+<<<<<<< Updated upstream
 +----------------+------------------------------------------+------------------+------------------+----------------+
 |  Clock Signal  |               Enable Signal              | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+------------------------------------------+------------------+------------------+----------------+
@@ -86,5 +100,31 @@ Table of Contents
 |  clk_IBUF_BUFG | control_pwm/ed/temp_pwm_nedge            | reset_p_IBUF     |                8 |             32 |
 |  clk_IBUF_BUFG |                                          | reset_p_IBUF     |               17 |             50 |
 +----------------+------------------------------------------+------------------+------------------+----------------+
+=======
++----------------+------------------------------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |                           Enable Signal                          | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+------------------------------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | fnd/rc/E[0]                                                      |                  |                1 |              4 |
+|  clk_IBUF_BUFG | power_cntr_0/sec_clk/ed/E[0]                                     | reset_p_IBUF     |                2 |              4 |
+|  clk_IBUF_BUFG | btn_led_cntr/btn1/E[0]                                           | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | btn_power_cntr/btn1/E[0]                                         | reset_p_IBUF     |                3 |              4 |
+|  clk_IBUF_BUFG | btn_power_cntr/btn1/ff_cur_reg_1[0]                              | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | btn_power_cntr/ed/ff_old_reg_0                                   | reset_p_IBUF     |                2 |              4 |
+|  clk_IBUF_BUFG | fnd/rc/ed/E[0]                                                   | reset_p_IBUF     |                2 |              5 |
+|  clk_IBUF_BUFG | nolabel_line75/dth11/ed/E[0]                                     | reset_p_IBUF     |                2 |              6 |
+|  clk_IBUF_BUFG | nolabel_line75/dth11/data_count[5]_i_1_n_0                       | reset_p_IBUF     |                3 |              6 |
+| ~clk_IBUF_BUFG | power_cntr_0/speed_next_state0                                   | reset_p_IBUF     |                1 |              6 |
+|  clk_IBUF_BUFG | nolabel_line100/ed/E[0]                                          | reset_p_IBUF     |                3 |              7 |
+| ~clk_IBUF_BUFG | blue_led/led_b/ed_n1/E[0]                                        | reset_p_IBUF     |                2 |              7 |
+| ~clk_IBUF_BUFG | power_cntr_0/usec_clk/ed/ff_old_reg_0[0]                         | reset_p_IBUF     |                4 |             10 |
+| ~clk_IBUF_BUFG | power_cntr_0/msec_clk/ed/E[0]                                    | reset_p_IBUF     |                3 |             10 |
+| ~clk_IBUF_BUFG | nolabel_line75/dth11/usec_clk/ed/ff_cur_reg_0                    | reset_p_IBUF     |                6 |             22 |
+|  clk_IBUF_BUFG | control_pwm/ed/temp_pwm_nedge                                    | reset_p_IBUF     |                8 |             32 |
+| ~clk_IBUF_BUFG | nolabel_line100/pwm_rotation/edge_detector_0/pwm_freqXstep_nedge | reset_p_IBUF     |                8 |             32 |
+|  clk_IBUF_BUFG |                                                                  | reset_p_IBUF     |               20 |             54 |
+|  clk_IBUF_BUFG |                                                                  |                  |               19 |             61 |
+| ~clk_IBUF_BUFG |                                                                  | reset_p_IBUF     |               27 |             77 |
++----------------+------------------------------------------------------------------+------------------+------------------+----------------+
+>>>>>>> Stashed changes
 
 

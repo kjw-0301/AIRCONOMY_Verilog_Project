@@ -391,9 +391,9 @@ module fan_led(
 
    //led
    assign led_debug[4] = (duty == 0);
-   assign led_debug[5] = (duty == 30);
-   assign led_debug[6] = (duty == 60);
-   assign led_debug[7] = (duty == 90);
+   assign led_debug[5] = (duty == 20);
+   assign led_debug[6] = (duty == 40);
+   assign led_debug[7] = (duty == 60);
    
    
    // use 3color

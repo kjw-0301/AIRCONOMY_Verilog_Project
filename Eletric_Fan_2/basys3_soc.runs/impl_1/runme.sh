@@ -24,7 +24,11 @@ else
 fi
 export LD_LIBRARY_PATH
 
+<<<<<<< Updated upstream
 HD_PWD='E:/Work/vivado_2019/basys3_soc/basys3_soc.runs/impl_1'
+=======
+HD_PWD='C:/Users/PC/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1'
+>>>>>>> Stashed changes
 cd "$HD_PWD"
 
 HD_LOG=runme.log
