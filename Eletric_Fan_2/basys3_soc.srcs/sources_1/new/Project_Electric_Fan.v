@@ -382,8 +382,8 @@ module fan_led(
     always @(posedge clk or posedge reset_p) begin
         if(reset_p) duty = 0;
         else if(btn_led) begin
-            if(duty>=90) duty =0;
-            else duty = duty + 30;
+            if(duty>=60) duty =0;
+            else duty = duty + 20;
         end
      end
      
