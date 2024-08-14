@@ -510,7 +510,7 @@ module HC_SR04_top (
     wire [21:0] distance_cm;
     HC_SR04_cntr HC_SR04_cntr_0(.clk(clk), .reset_p(reset_p), .hc_sr04_echo(hc_sr04_echo), .hc_sr04_trig(hc_sr04_trig), .distance(distance_cm),  .led_debug(led_debug)); 
     
-     wire [11:0] distance_cm_bcd;
+    wire [11:0] distance_cm_bcd;
     bin_to_dec bcd_humi(.bin(distance_cm[11:0]),  .bcd(distance_cm_bcd));
    
     fnd_cntr fnd (.clk(clk), .reset_p(reset_p), .value(distance_cm_bcd), .com(com), .seg_7(seg_7));    

@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date                      : Wed Aug 14 17:45:32 2024
-| Host                      : DESKTOP-VQQPT2C running 64-bit major release  (build 9200)
+| Date                      : Wed Aug 14 19:04:22 2024
+| Host                      : DESKTOP-5VNL0D5 running 64-bit major release  (build 9200)
 | Command                   : report_io -file top_module_of_electric_fan_io_placed.rpt
 | Design                    : top_module_of_electric_fan
 | Device                    : xc7a35t
@@ -68,7 +68,7 @@ Table of Contents
 | B12        |                   | Dedicated  | VREFP_0                      | XADC          |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | B13        |                   | Dedicated  | VN_0                         | XADC          |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | B14        |                   |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| B15        | trig              | High Range | IO_L11N_T1_SRCC_16           | TRISTATE      | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| B15        | trig              | High Range | IO_L11N_T1_SRCC_16           | OUTPUT        | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | B16        |                   | High Range | IO_L13N_T2_MRCC_16           | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | B17        |                   | High Range | IO_L14N_T2_SRCC_16           | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | B18        |                   | High Range | IO_L19P_T3_16                | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
@@ -247,7 +247,7 @@ Table of Contents
 | V10        |                   | Dedicated  | PROGRAM_B_0                  | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V11        |                   | Dedicated  | CFGBVS_0                     | Config        |             |       0 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | V12        |                   | Dedicated  | M0_0                         | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| V13        | led_debug[8]      | High Range | IO_L24P_T3_A01_D17_14        | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| V13        | led_debug[8]      | High Range | IO_L24P_T3_A01_D17_14        | TRISTATE      | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | V14        | led_debug[7]      | High Range | IO_L24N_T3_A00_D16_14        | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | V15        |                   | High Range | IO_L21P_T3_DQS_14            | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V16        |                   | High Range | IO_L19P_T3_A10_D26_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

@@ -59,22 +59,26 @@ module top_module_of_electric_fan (
     always @(posedge clk or posedge reset_p) begin
         if(reset_p) current_state = POWER_CONTROL;
         else if(btn_power_pedge)  current_state = POWER_CONTROL;
-        else if(btn_echo_pedge) current_state = ECHO_CONTROL;
+        else if(btn_echo_pedge) begin
+            if(current_state == ECHO_CONTROL) current_state = POWER_CONTROL;
+            else current_state = ECHO_CONTROL;
+        end
     end
     
     // Declare Instance of module
     wire [1:0] power_duty, echo_duty;  // duty ratio of motor
     wire [3:0] left_time;              // if current state is timer mode, this variable has data of lefted time.
-   wire rotation_enable;
+    wire rotation_enable;
     power_cntr power_cntr_0 (.clk(clk), .reset_p(reset_p), .btn_power_enable(btn_power_pedge), .btn_timer_enable(btn_timer_pedge), .duty(power_duty), .left_time(left_time), .rotation_enable(rotation_enable));
     
     // current state 값에 따라 모터에 적용한 duty 값을 선택 
     wire [1:0] duty;
     wire [15:0]temp_data;
     wire led_debug_echo;
-    wire [15:0] distance;
+    wire [11:0] distance, temperature;
     assign duty = (current_state == ECHO_CONTROL) ? echo_duty : power_duty;
-    dht11_usonic_duty  (.clk(clk),.reset_p(reset_p), .dht11_data(dht11),.echo(echo), .echo_btn_enable(btn_echo_pedge),.duty(echo_duty),.t_data_out(temp_data), .led_debug(led_debug_echo), .echo_buffer_out(distance));
+    dht11_usonic_duty  (.clk(clk),.reset_p(reset_p), .dht11_data(dht11), .echo(echo), .trig(trig), .echo_btn_enable(btn_echo_pedge),.duty(echo_duty),.t_data_out(temp_data),
+                        .led_debug(led_debug_echo), .echo_buffer_out(distance), .temperature_bcd_out(temperature));
     
     
     // 변화된 모터의 duty값을 모터에 적용
@@ -91,7 +95,7 @@ module top_module_of_electric_fan (
     bin_to_dec convert_bin_to_dec_for_left_time (.bin(left_time), .bcd(bcd_left_time));
     
     wire [15:0] fnd_led;
-    assign fnd_led =  (current_state == ECHO_CONTROL) ? distance  : {bcd_left_time[7:0], 6'b0, duty};
+    assign fnd_led =  (current_state == ECHO_CONTROL) ? {temperature[7:0], 6'b0, duty}  : {bcd_left_time[7:0], 6'b0, duty};
     
     fnd_cntr fnd(.clk(clk), .reset_p(reset_p), .value(fnd_led), .com(com), .seg_7(seg_7));
     
@@ -408,7 +412,8 @@ module dht11_usonic_duty(
     output t_data_out,
     output [1:0]duty,
     
-    output [15:0] echo_buffer_out);
+    output [11:0] temperature_bcd_out,
+    output [11:0] echo_buffer_out);
 
     parameter ECHO_ON = 2'b01;
     parameter ECHO_OFF = 2'b10;
@@ -426,18 +431,16 @@ module dht11_usonic_duty(
     assign humidity_data = humidity;
     reg echo_enable;
     reg[2:0] ehco_state, ehco_next_state;
-
-     wire [15:0] dist;
-     wire [15:0] echo_buffer;
-     wire led_debug_usonic;
-     controler_usonic        usonic          (.clk(clk), .reset_p(reset_p),.echo(echo), .trig(trig), .echo_buffer(echo_buffer),.led_debug(led_debug_usonic));
+     
+    wire [21:0] distance_cm;
+    HC_SR04_cntr HC_SR04_cntr_0(.clk(clk), .reset_p(reset_p), .hc_sr04_echo(echo), .hc_sr04_trig(trig), .distance(distance_cm));   
        
     always@(posedge clk or posedge reset_p)begin
         if(reset_p)ehco_state = ECHO_OFF;
         else if(echo_btn_enable) ehco_state = ehco_next_state;
     end
 
-    assign usonic_enable =  (echo_buffer >= 10) ? 0 : 1;
+    assign usonic_enable =  (distance_cm >= 22'd10) ? 0 : 1;
     
     reg [1:0] temp_duty; 
     always@(negedge clk or posedge reset_p)begin
@@ -465,10 +468,15 @@ module dht11_usonic_duty(
     end
     
     assign duty =( temp_duty && usonic_enable) ? temp_duty : 0;
-    assign echo_buffer_out = echo_buffer;
+    
+    wire [11:0] distance_cm_bcd;
+    bin_to_dec bcd_humi_distance(.bin(distance_cm[11:0]),  .bcd(distance_cm_bcd));
+    
+    bin_to_dec bcd_humi_temperature(.bin(temperature),  .bcd(temperature_bcd_out));
+    
+    assign echo_buffer_out = distance_cm_bcd;
 
     assign led_debug[8] = ehco_state;
-    assign led_debug[9:11]  = led_debug_usonic;
     
     endmodule
 
