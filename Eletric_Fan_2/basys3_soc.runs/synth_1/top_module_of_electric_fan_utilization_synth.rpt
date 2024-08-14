@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Aug 14 09:10:40 2024
-| Host         : Ingusto running 64-bit major release  (build 9200)
+| Date         : Wed Aug 14 12:23:25 2024
+| Host         : DESKTOP-VQQPT2C running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_module_of_electric_fan_utilization_synth.rpt -pb top_module_of_electric_fan_utilization_synth.pb
 | Design       : top_module_of_electric_fan
 | Device       : 7a35tcpg236-1
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  474 |     0 |     20800 |  2.28 |
-|   LUT as Logic          |  474 |     0 |     20800 |  2.28 |
+| Slice LUTs*             |  541 |     0 |     20800 |  2.60 |
+|   LUT as Logic          |  541 |     0 |     20800 |  2.60 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  358 |     0 |     41600 |  0.86 |
-|   Register as Flip Flop |  358 |     0 |     41600 |  0.86 |
+| Slice Registers         |  393 |     0 |     41600 |  0.94 |
+|   Register as Flip Flop |  393 |     0 |     41600 |  0.94 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -54,10 +54,10 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 15    |          Yes |           - |          Set |
-| 278   |          Yes |           - |        Reset |
+| 17    |          Yes |           - |          Set |
+| 320   |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 65    |          Yes |       Reset |            - |
+| 56    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,17 +149,17 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  354 |                 LUT |
-| FDCE     |  278 |        Flop & Latch |
-| CARRY4   |   97 |          CarryLogic |
-| LUT6     |   88 |                 LUT |
-| LUT4     |   65 |                 LUT |
-| FDRE     |   65 |        Flop & Latch |
-| LUT5     |   34 |                 LUT |
+| LUT2     |  367 |                 LUT |
+| FDCE     |  320 |        Flop & Latch |
+| LUT6     |  112 |                 LUT |
+| CARRY4   |   90 |          CarryLogic |
+| LUT4     |   68 |                 LUT |
+| LUT3     |   63 |                 LUT |
+| FDRE     |   56 |        Flop & Latch |
+| LUT5     |   43 |                 LUT |
 | OBUF     |   23 |                  IO |
-| LUT3     |   18 |                 LUT |
 | LUT1     |   18 |                 LUT |
-| FDPE     |   15 |        Flop & Latch |
+| FDPE     |   17 |        Flop & Latch |
 | IBUF     |    8 |                  IO |
 | OBUFT    |    1 |                  IO |
 | BUFG     |    1 |               Clock |
