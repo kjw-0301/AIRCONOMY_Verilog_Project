@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1'
+HD_PWD='C:/Users/PC/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log top_module_of_electric_fan.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_module_of_electric_fan.tcl -notrace
 
 

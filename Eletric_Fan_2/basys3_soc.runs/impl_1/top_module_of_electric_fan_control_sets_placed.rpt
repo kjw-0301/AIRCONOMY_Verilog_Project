@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Aug 14 12:24:40 2024
+| Date         : Wed Aug 14 17:45:32 2024
 | Host         : DESKTOP-VQQPT2C running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_module_of_electric_fan_control_sets_placed.rpt
 | Design       : top_module_of_electric_fan
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    20 |
-|    Minimum number of control sets                        |    20 |
+| Total control sets                                       |    24 |
+|    Minimum number of control sets                        |    24 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    62 |
+| Unused register locations in slices containing registers |    59 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    20 |
+| Total control sets |    24 |
 | >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     5 |
-| >= 6 to < 8        |     4 |
-| >= 8 to < 10       |     2 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     5 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     2 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     7 |
+| >= 16              |    10 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              44 |           14 |
-| No           | No                    | Yes                    |             135 |           46 |
+| No           | No                    | No                     |              61 |           19 |
+| No           | No                    | Yes                    |             183 |           66 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              12 |            4 |
-| Yes          | No                    | Yes                    |             203 |           59 |
+| Yes          | No                    | No                     |              28 |            9 |
+| Yes          | No                    | Yes                    |             245 |           87 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -73,26 +73,30 @@ Table of Contents
 +----------------+------------------------------------------------------------------+------------------+------------------+----------------+
 |  Clock Signal  |                           Enable Signal                          | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+------------------------------------------------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG | fnd/rc/E[0]                                                      |                  |                1 |              4 |
-|  clk_IBUF_BUFG | btn_led_cntr/btn1/ff_cur_reg_1[0]                                | reset_p_IBUF     |                1 |              4 |
-|  clk_IBUF_BUFG | btn_power_cntr/btn1/ff_cur_reg_1[0]                              | reset_p_IBUF     |                1 |              4 |
-|  clk_IBUF_BUFG | btn_power_cntr/btn1/ff_old_reg_1[0]                              | reset_p_IBUF     |                2 |              4 |
+|  clk_IBUF_BUFG | fnd/rc/E[0]                                                      |                  |                2 |              4 |
 |  clk_IBUF_BUFG | power_cntr_0/sec_clk/ed/E[0]                                     | reset_p_IBUF     |                2 |              4 |
-|  clk_IBUF_BUFG | nolabel_line76/dth11/ed/E[0]                                     | reset_p_IBUF     |                2 |              6 |
+|  clk_IBUF_BUFG | btn_led_cntr/ed_btn/E[0]                                         | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | btn_power_cntr/ed_btn/E[0]                                       | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | btn_power_cntr/ed_clk/ff_old_reg_0                               | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | fnd/rc/ed/E[0]                                                   | reset_p_IBUF     |                4 |              5 |
+|  clk_IBUF_BUFG | nolabel_line77/dth11/ed/E[0]                                     | reset_p_IBUF     |                2 |              6 |
 | ~clk_IBUF_BUFG | power_cntr_0/speed_next_state0                                   | reset_p_IBUF     |                1 |              6 |
-|  clk_IBUF_BUFG | nolabel_line102/ed/E[0]                                          | reset_p_IBUF     |                3 |              7 |
-| ~clk_IBUF_BUFG | blue_led/led_b/ed_n1/E[0]                                        | reset_p_IBUF     |                2 |              7 |
-|  clk_IBUF_BUFG | nolabel_line76/dth11/ed/temp_data_reg[1][0]                      |                  |                3 |              8 |
-|  clk_IBUF_BUFG | btn_power_cntr/ed/E[0]                                           | reset_p_IBUF     |                3 |              9 |
+|  clk_IBUF_BUFG | nolabel_line106/ed/E[0]                                          | reset_p_IBUF     |                3 |              7 |
+| ~clk_IBUF_BUFG | blue_led/led_b/edge_detector_0/E[0]                              | reset_p_IBUF     |                3 |              7 |
+| ~clk_IBUF_BUFG | nolabel_line77/usonic/usec_clock/ed/E[0]                         | reset_p_IBUF     |                3 |              7 |
+|  clk_IBUF_BUFG | nolabel_line77/dth11/ed/temp_data_reg[4][0]                      |                  |                3 |              8 |
 | ~clk_IBUF_BUFG | power_cntr_0/usec_clk/ed/ff_old_reg_0[0]                         | reset_p_IBUF     |                3 |             10 |
 | ~clk_IBUF_BUFG | power_cntr_0/msec_clk/ed/E[0]                                    | reset_p_IBUF     |                3 |             10 |
-| ~clk_IBUF_BUFG | nolabel_line76/dth11/usec_clk/ed/ff_old_reg_0                    | reset_p_IBUF     |                7 |             22 |
+|  clk_IBUF_BUFG | nolabel_line77/usonic/ed/E[0]                                    |                  |                4 |             16 |
+| ~clk_IBUF_BUFG | nolabel_line77/usonic/usec_clock/ed/cnt_e_reg_C                  | reset_p_IBUF     |                4 |             16 |
+| ~clk_IBUF_BUFG | nolabel_line77/dth11/usec_clk/ed/ff_old_reg_0                    | reset_p_IBUF     |               11 |             22 |
+| ~clk_IBUF_BUFG | nolabel_line77/usonic/usec_clock/ed/ff_cur_reg_1                 | reset_p_IBUF     |                6 |             23 |
 |  clk_IBUF_BUFG | control_pwm/ed/temp_pwm_nedge                                    | reset_p_IBUF     |                8 |             32 |
-| ~clk_IBUF_BUFG | nolabel_line102/pwm_rotation/edge_detector_0/pwm_freqXstep_nedge | reset_p_IBUF     |                8 |             32 |
-|  clk_IBUF_BUFG |                                                                  |                  |               14 |             44 |
-|  clk_IBUF_BUFG | nolabel_line76/dth11/data_count[5]_i_1_n_0                       | reset_p_IBUF     |               13 |             46 |
-|  clk_IBUF_BUFG |                                                                  | reset_p_IBUF     |               18 |             54 |
-| ~clk_IBUF_BUFG |                                                                  | reset_p_IBUF     |               28 |             81 |
+| ~clk_IBUF_BUFG | nolabel_line106/pwm_rotation/edge_detector_0/pwm_freqXstep_nedge | reset_p_IBUF     |                8 |             32 |
+|  clk_IBUF_BUFG | nolabel_line77/dth11/data_count[5]_i_1_n_0                       | reset_p_IBUF     |               23 |             46 |
+|  clk_IBUF_BUFG |                                                                  |                  |               19 |             61 |
+|  clk_IBUF_BUFG |                                                                  | reset_p_IBUF     |               26 |             65 |
+| ~clk_IBUF_BUFG |                                                                  | reset_p_IBUF     |               40 |            118 |
 +----------------+------------------------------------------------------------------+------------------+------------------+----------------+
 
 
