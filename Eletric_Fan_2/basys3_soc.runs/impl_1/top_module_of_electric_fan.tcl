@@ -65,18 +65,18 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
+  set_param chipscope.maxJobs 3
   create_project -in_memory -part xc7a35tcpg236-1
-  set_property board_part_repo_paths {C:/Users/minkyu/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store} [current_project]
+  set_property board_part_repo_paths {C:/Users/kimhk/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store} [current_project]
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.cache/wt [current_project]
-  set_property parent.project_path C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.xpr [current_project]
-  set_property ip_output_repo C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.cache/wt [current_project]
+  set_property parent.project_path C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.xpr [current_project]
+  set_property ip_output_repo C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/top_module_of_electric_fan.dcp
-  read_xdc C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc
+  add_files -quiet C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/top_module_of_electric_fan.dcp
+  read_xdc C:/Users/kimhk/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc
   link_design -top top_module_of_electric_fan -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
