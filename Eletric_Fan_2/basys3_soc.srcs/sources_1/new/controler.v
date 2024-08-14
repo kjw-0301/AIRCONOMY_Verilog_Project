@@ -1009,3 +1009,125 @@ module pwm_Nstep_freq
     
 endmodule
 
+
+module controler_usonic(
+                    input clk, reset_p,
+                    input echo,                    
+                    output reg trig,
+                    output reg [15:0] echo_buffer,
+                    //output reg [15:0] dist,
+                    output [15:0] led_debug);
+
+                    parameter S_IDLE                  = 3'b001;
+                    parameter S_TRIG                 = 3'b010; 
+                    parameter S_ECHO               = 3'b100;
+                    
+                     reg [2:0] state, next_state;
+                    
+                    assign led_debug[5:0] =state;
+                    
+                    wire clk_usec;
+                     clock_div_100   usec_clock      (.clk(clk), .reset_p(reset_p), .clk_div_100_nedge(clk_usec));
+                     
+                     
+                     reg cnt_e;
+                     wire  [15:0] dist_cm;
+                     clock_div_58_sr04(.clk(clk), .reset_p(reset_p),.clk_usec(clk_usec), .cnt_e(cnt_e),.dist_cm(dist_cm));
+                     
+                     wire echo_nedge, echo_pedge;
+                       edge_detector_p        ed       (.clk(clk), .reset_p(reset_p), .cp(echo),  .p_edge(echo_pedge),  .n_edge(echo_nedge));
+                     
+                     reg [22:0] count_usec;
+                     reg  count_usec_e;
+                     
+                     
+                     always @(negedge clk or posedge reset_p) begin
+                                        if(reset_p) count_usec =0;
+                                        else if (clk_usec && count_usec_e) count_usec = count_usec +1;
+                                        else if(!count_usec_e) count_usec =0;
+                      end
+                      
+                      
+                      always @(negedge clk or posedge reset_p) begin
+                                        if(reset_p) state = S_IDLE;
+                                        else state = next_state;
+                      end
+                      
+                      always @(posedge clk or posedge reset_p) begin
+                                        if(reset_p) begin
+                                                    next_state = S_IDLE;
+                                                    count_usec_e =0;
+                                                    cnt_e =0;
+                                         end
+                                         
+                                        else begin
+                                                    case(state) 
+                                                            S_IDLE : begin
+                                                                        if(count_usec < 22'd3_000_000) begin
+                                                                                    count_usec_e =1;
+                                                                        end
+                                                                        else begin 
+                                                                                    count_usec_e =0;
+                                                                                    next_state = S_TRIG;                                                                        
+                                                                        end
+                                                            end
+                                                            
+                                                            S_TRIG : begin
+                                                                        if(count_usec< 22'd10)begin
+                                                                                    count_usec_e =1;
+                                                                                    trig =1;
+                                                                         end
+                                                                         else begin
+                                                                                    count_usec_e =0;                                                                                    
+                                                                                    trig =0;
+                                                                                    next_state = S_ECHO;
+                                                                         end
+                                                            end
+                                                            
+                                                            S_ECHO :  begin         
+                                                                        if(echo_pedge) begin
+                                                                                   // count_usec_e =1;
+                                                                                    cnt_e =1;
+                                                                        end
+                                                                        else if (echo_nedge) begin
+                                                                                     //echo_buffer <= count_usec;
+                                                                                     //echo_buffer <= dist_cm;
+                                                                                     echo_buffer <= dist_cm;
+                                                                                     //count_usec_e <=0;
+                                                                                     cnt_e <=0;
+                                                                                     next_state <= S_IDLE;                                                                       
+                                                                        end                                                                                                               
+                                                            end                                                                                                                         
+                                                    endcase                                                                                    
+                                        end
+                      end
+ 
+endmodule
+
+module clock_div_58_sr04(
+            input clk, reset_p,
+            input clk_usec, cnt_e, 
+            output reg [15:0] dist_cm);
+            
+            reg [9:0] cnt;               
+            
+            always @(negedge clk or posedge reset_p) begin
+                    if(reset_p) begin       
+                             cnt = 0;
+                             dist_cm =0;
+                    end
+                    else if(clk_usec)begin
+                            if(cnt_e) begin
+                                    if(cnt>=57)  begin
+                                            cnt = 0;
+                                            dist_cm = dist_cm +1;                                            
+                                    end
+                                    else cnt = cnt +1;  
+                            end
+                    end
+                    else if (!cnt_e)begin
+                             cnt =0;
+                             dist_cm =0;
+                    end
+             end                               
+endmodule  

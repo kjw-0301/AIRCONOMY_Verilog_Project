@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1723605733">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1723625012">
   <File Type="PA-TCL" Name="top_module_of_electric_fan.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_module_of_electric_fan_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_module_of_electric_fan_reports.tcl"/>
   <File Type="RDS-RDS" Name="top_module_of_electric_fan.vds"/>
   <File Type="RDS-UTIL" Name="top_module_of_electric_fan_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="top_module_of_electric_fan_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="top_module_of_electric_fan.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_module_of_electric_fan_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_module_of_electric_fan_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/clock_library.v">
@@ -51,7 +54,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/xadc_wiz_1/xadc_wiz_1.xci">
+    <File Path="$PSRCDIR/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -59,7 +62,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci">
+    <File Path="$PSRCDIR/sources_1/ip/xadc_wiz_1/xadc_wiz_1.xci">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
