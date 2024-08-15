@@ -370,12 +370,12 @@ module fan_led(
     output [7:0] seg_7); 
     
     //duty_code
-    reg [5:0] duty;
+    reg [6:0] duty;
     always @(posedge clk or posedge reset_p) begin
         if(reset_p) duty = 0;
         else if(btn_led) begin
-            if(duty>=60) duty =0;
-            else duty = duty + 20;
+            if(duty>=99) duty =0;
+            else duty = duty + 33;
         end
      end
      
@@ -384,9 +384,9 @@ module fan_led(
 
    //led
    assign led_debug[4] = (duty == 0);
-   assign led_debug[5] = (duty == 20);
-   assign led_debug[6] = (duty == 40);
-   assign led_debug[7] = (duty == 60);
+   assign led_debug[5] = (duty == 33);
+   assign led_debug[6] = (duty == 66);
+   assign led_debug[7] = (duty == 99);
    
 
    //convert_bcd
