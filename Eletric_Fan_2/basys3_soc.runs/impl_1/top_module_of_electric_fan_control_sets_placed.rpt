@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Aug 19 08:50:26 2024
+| Date         : Mon Aug 19 18:46:32 2024
 | Host         : DESKTOP-VQQPT2C running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_module_of_electric_fan_control_sets_placed.rpt
 | Design       : top_module_of_electric_fan
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              61 |           19 |
-| No           | No                    | Yes                    |             181 |           62 |
+| No           | No                    | Yes                    |             181 |           60 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |              24 |            9 |
-| Yes          | No                    | Yes                    |             246 |           87 |
+| Yes          | No                    | Yes                    |             246 |           90 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -74,31 +74,31 @@ Table of Contents
 |  Clock Signal  |                           Enable Signal                          | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+------------------------------------------------------------------+------------------+------------------+----------------+
 | ~clk_IBUF_BUFG | nolabel_line80/HC_SR04_cntr_0/hc_sr04_trig1_out                  |                  |                1 |              1 |
-|  clk_IBUF_BUFG | btn_power_cntr/ed_clk/ff_old_reg_0                               | reset_p_IBUF     |                2 |              4 |
+|  clk_IBUF_BUFG | fnd/rc/E[0]                                                      |                  |                3 |              4 |
+|  clk_IBUF_BUFG | power_cntr_0/sec_clk/ed/E[0]                                     | reset_p_IBUF     |                1 |              4 |
 |  clk_IBUF_BUFG | btn_power_cntr/ed_btn/E[0]                                       | reset_p_IBUF     |                1 |              4 |
-|  clk_IBUF_BUFG | power_cntr_0/sec_clk/ed/E[0]                                     | reset_p_IBUF     |                2 |              4 |
-|  clk_IBUF_BUFG | fnd/rc/E[0]                                                      |                  |                4 |              4 |
+|  clk_IBUF_BUFG | btn_power_cntr/ed_clk/ff_old_reg_0                               | reset_p_IBUF     |                2 |              4 |
 | ~clk_IBUF_BUFG | nolabel_line80/HC_SR04_cntr_0/edge_detector_0/E[0]               | reset_p_IBUF     |                2 |              4 |
 |  clk_IBUF_BUFG | fnd/rc/ed/E[0]                                                   | reset_p_IBUF     |                1 |              5 |
-|  clk_IBUF_BUFG | nolabel_line80/dth11/ed/E[0]                                     | reset_p_IBUF     |                2 |              6 |
-| ~clk_IBUF_BUFG | nolabel_line80/HC_SR04_cntr_0/usec_clk/ed/E[0]                   | reset_p_IBUF     |                3 |              6 |
+|  clk_IBUF_BUFG | nolabel_line80/dth11/ed/E[0]                                     | reset_p_IBUF     |                3 |              6 |
 | ~clk_IBUF_BUFG | power_cntr_0/speed_next_state0                                   | reset_p_IBUF     |                2 |              6 |
-|  clk_IBUF_BUFG | btn_led_cntr/ed_btn/E[0]                                         | reset_p_IBUF     |                2 |              7 |
+| ~clk_IBUF_BUFG | nolabel_line80/HC_SR04_cntr_0/usec_clk/ed/E[0]                   | reset_p_IBUF     |                4 |              6 |
 |  clk_IBUF_BUFG | nolabel_line110/ed/E[0]                                          | reset_p_IBUF     |                3 |              7 |
+|  clk_IBUF_BUFG | btn_led_cntr/ed_btn/E[0]                                         | reset_p_IBUF     |                2 |              7 |
 | ~clk_IBUF_BUFG | blue_led/led_b/edge_detector_0/E[0]                              | reset_p_IBUF     |                2 |              7 |
 |  clk_IBUF_BUFG | nolabel_line80/dth11/ed/data_count_reg[5][0]                     |                  |                2 |              8 |
-| ~clk_IBUF_BUFG | power_cntr_0/msec_clk/ed/E[0]                                    | reset_p_IBUF     |                3 |             10 |
 | ~clk_IBUF_BUFG | power_cntr_0/usec_clk/ed/ff_old_reg_0[0]                         | reset_p_IBUF     |                3 |             10 |
-| ~clk_IBUF_BUFG | nolabel_line80/HC_SR04_cntr_0/edge_detector_0/state_reg[3][0]    |                  |                2 |             11 |
+| ~clk_IBUF_BUFG | power_cntr_0/msec_clk/ed/E[0]                                    | reset_p_IBUF     |                3 |             10 |
+| ~clk_IBUF_BUFG | nolabel_line80/HC_SR04_cntr_0/edge_detector_0/state_reg[3][0]    |                  |                3 |             11 |
 | ~clk_IBUF_BUFG | nolabel_line80/HC_SR04_cntr_0/usec_clk/ed/cnt_e_reg              | reset_p_IBUF     |                3 |             12 |
 |  clk_IBUF_BUFG | nolabel_line80/HC_SR04_cntr_0/usec_clk/ed/ff_cur_reg_1           | reset_p_IBUF     |                6 |             22 |
-| ~clk_IBUF_BUFG | nolabel_line80/dth11/usec_clk/ed/ff_cur_reg_0                    | reset_p_IBUF     |               12 |             22 |
+| ~clk_IBUF_BUFG | nolabel_line80/dth11/usec_clk/ed/ff_cur_reg_0                    | reset_p_IBUF     |               13 |             22 |
 |  clk_IBUF_BUFG | control_pwm/ed/temp_pwm_nedge                                    | reset_p_IBUF     |                8 |             32 |
 | ~clk_IBUF_BUFG | nolabel_line110/pwm_rotation/edge_detector_0/pwm_freqXstep_nedge | reset_p_IBUF     |                8 |             32 |
-|  clk_IBUF_BUFG | nolabel_line80/dth11/data_count[5]_i_1_n_0                       | reset_p_IBUF     |               22 |             46 |
+|  clk_IBUF_BUFG | nolabel_line80/dth11/data_count[5]_i_1_n_0                       | reset_p_IBUF     |               23 |             46 |
 |  clk_IBUF_BUFG |                                                                  |                  |               19 |             61 |
-|  clk_IBUF_BUFG |                                                                  | reset_p_IBUF     |               23 |             64 |
-| ~clk_IBUF_BUFG |                                                                  | reset_p_IBUF     |               39 |            117 |
+|  clk_IBUF_BUFG |                                                                  | reset_p_IBUF     |               19 |             64 |
+| ~clk_IBUF_BUFG |                                                                  | reset_p_IBUF     |               41 |            117 |
 +----------------+------------------------------------------------------------------+------------------+------------------+----------------+
 
 
