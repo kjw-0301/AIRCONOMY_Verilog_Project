@@ -86,12 +86,12 @@ module top_module_of_electric_fan (
 
     //led_mode0
     wire led_blue;
-    wire [7:0]led_led_debug;
+   wire [7:0]led_led_debug; 
     fan_led blue_led(.clk(clk), .reset_p(reset_p), .btn_led(btn_led_pedge),
                                               .led_blue(led_blue), .led_debug(led_led_debug[7:4]));
     
     // FND로 현재의 모터 파워 출력
-    wire [15:0] bcd_left_time;
+   wire [15:0] bcd_left_time;
     bin_to_dec convert_bin_to_dec_for_left_time (.bin(left_time), .bcd(bcd_left_time));
     
     wire [15:0] fnd_led;
@@ -103,7 +103,7 @@ module top_module_of_electric_fan (
     assign led_debug[3:0] = (duty == 2'd0)? 4'b0001 : (duty == 2'd1)? 4'b0010 :
                             (duty == 2'd2)? 4'b0100 : 4'b1000;
     assign led = led_blue;
-    assign led_debug[7:4] = led_led_debug[7:4];
+assign led_debug[7:4] = led_led_debug[7:4];
     assign  led_debug[8] = led_debug_echo;
     
     // rotation instance
@@ -420,18 +420,8 @@ module dht11_usonic_duty(
 
     wire [7:0] humidity, temperature; 
     dht11_cntrl dth11(.clk(clk), .reset_p(reset_p), .dht11_data(dht11_data), .humidity(humidity), .temperature(temperature));
-
-//    wire[15:0] humidity_bcd, temperature_bcd;
-//    bin_to_dec bcd_humi(.bin({4'b0, humidity}),  .bcd(humidity_bcd));
-//    bin_to_dec bcd_temp(.bin({4'b0, temperature}),  .bcd(temperature_bcd));
-
-    wire[7:0] temperature_data; 
-    wire[7:0] humidity_data;
-    assign temperature_data = temperature;
-    assign humidity_data = humidity;
-    reg echo_enable;
+    
     reg[2:0] ehco_state, ehco_next_state;
-     
     wire [21:0] distance_cm;
     HC_SR04_cntr HC_SR04_cntr_0(.clk(clk), .reset_p(reset_p), .hc_sr04_echo(echo), .hc_sr04_trig(trig), .distance(distance_cm));   
        
@@ -454,8 +444,6 @@ module dht11_usonic_duty(
                     if(8'd24 <= temperature && temperature <= 8'd26) temp_duty = 2'd1;
                     else if(8'd27 <= temperature && temperature <= 8'd29) temp_duty = 2'd2;
                     else if(temperature > 8'd29) begin temp_duty = 2'd3;
-//                    else if(t_data >= 15'd28  h_data >= 15'd25) duty = 2'd2;
-//                    else if(t_data >= 15'd25  h_data >= 15'd25) duty = 2'd1;
                     ehco_next_state = ECHO_OFF;
                     end
                 end
