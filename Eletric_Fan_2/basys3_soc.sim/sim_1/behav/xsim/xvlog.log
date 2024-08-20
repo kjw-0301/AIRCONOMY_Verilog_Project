@@ -1,0 +1,60 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_div_100
+INFO: [VRFC 10-311] analyzing module clock_div_1000
+INFO: [VRFC 10-311] analyzing module clock_div_60
+INFO: [VRFC 10-311] analyzing module counter_bcd_60
+INFO: [VRFC 10-311] analyzing module loadable_counter_bcd_60
+INFO: [VRFC 10-311] analyzing module counter_bcd_60_clear
+INFO: [VRFC 10-311] analyzing module clock_div_10
+INFO: [VRFC 10-311] analyzing module counter_bcd_100_clear
+INFO: [VRFC 10-311] analyzing module loadable_down_counter_bcd_60
+INFO: [VRFC 10-311] analyzing module sr04_div_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fnd_cntr
+INFO: [VRFC 10-311] analyzing module button_cntr
+INFO: [VRFC 10-311] analyzing module key_pad_cntr
+INFO: [VRFC 10-311] analyzing module key_pad_FSM
+INFO: [VRFC 10-311] analyzing module dht11_cntrl
+INFO: [VRFC 10-311] analyzing module HC_SR04_cntr
+WARNING: [VRFC 10-3380] identifier 'state' is used before its declaration [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:691]
+INFO: [VRFC 10-311] analyzing module HC_SR04_cntr_test
+WARNING: [VRFC 10-3380] identifier 'state' is used before its declaration [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:835]
+INFO: [VRFC 10-311] analyzing module pwm_100step
+INFO: [VRFC 10-311] analyzing module pwm_Nstep_freq
+INFO: [VRFC 10-311] analyzing module controler_usonic
+INFO: [VRFC 10-311] analyzing module clock_div_58_sr04
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-311] analyzing module half_adder_behavioral
+INFO: [VRFC 10-311] analyzing module half_adder_structural
+INFO: [VRFC 10-311] analyzing module half_adder_dataflow
+INFO: [VRFC 10-311] analyzing module full_adder_structural
+INFO: [VRFC 10-311] analyzing module full_adder_behavioral
+INFO: [VRFC 10-311] analyzing module full_adder_dataflow
+INFO: [VRFC 10-311] analyzing module fadder_4bits_s
+INFO: [VRFC 10-311] analyzing module fadder_4bits_dataflow
+INFO: [VRFC 10-311] analyzing module fadd_sub_4bits_s
+INFO: [VRFC 10-311] analyzing module fadd_sub_4bits
+INFO: [VRFC 10-311] analyzing module comparrator_dataflow
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-311] analyzing module comparator_n_bits_test
+INFO: [VRFC 10-311] analyzing module comparator_N_bits_b
+INFO: [VRFC 10-311] analyzing module decoder_2X4_b
+INFO: [VRFC 10-311] analyzing module decoder_2X4_d
+INFO: [VRFC 10-311] analyzing module decoder_7seg
+INFO: [VRFC 10-311] analyzing module encoder_4X2_b
+INFO: [VRFC 10-311] analyzing module encoder_4X2_d
+INFO: [VRFC 10-311] analyzing module mux_2_1
+INFO: [VRFC 10-311] analyzing module mux_4_1
+INFO: [VRFC 10-311] analyzing module mux_8_1
+INFO: [VRFC 10-311] analyzing module demux_1_4
+INFO: [VRFC 10-311] analyzing module mux_demux_test
+INFO: [VRFC 10-311] analyzing module bin_to_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_flip_flop_n
+INFO: [VRFC 10-311] analyzing module D_flip_flop_p
+INFO: [VRFC 10-311] analyzing module T_flip_flop_n
+INFO: [VRFC 10-311] analyzing module T_flip_flop_p
+INFO: [VRFC 10-311] analyzing module up_counter_asyc
+INFO: [VRFC 10-311] analyzing module down_counter_asyc
+INFO: [VRFC 10-311] analyzing module up_counter_p
