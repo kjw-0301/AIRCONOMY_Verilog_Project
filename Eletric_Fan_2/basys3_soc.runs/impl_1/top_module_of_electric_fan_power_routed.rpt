@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed Aug 14 19:04:42 2024
-| Host             : DESKTOP-5VNL0D5 running 64-bit major release  (build 9200)
+| Date             : Mon Aug 19 18:47:15 2024
+| Host             : DESKTOP-VQQPT2C running 64-bit major release  (build 9200)
 | Command          : report_power -file top_module_of_electric_fan_power_routed.rpt -pb top_module_of_electric_fan_power_summary_routed.pb -rpx top_module_of_electric_fan_power_routed.rpx
 | Design           : top_module_of_electric_fan
 | Device           : xc7a35tcpg236-1
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.084        |
+| Total On-Chip Power (W)  | 0.085        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.013        |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |     1515 |       --- |             --- |
-|   LUT as Logic |     0.001 |      695 |     20800 |            3.34 |
+| Slice Logic    |     0.002 |     1533 |       --- |             --- |
+|   LUT as Logic |     0.001 |      701 |     20800 |            3.37 |
 |   CARRY4       |    <0.001 |      121 |      8150 |            1.48 |
-|   Register     |    <0.001 |      509 |     41600 |            1.22 |
+|   Register     |    <0.001 |      513 |     41600 |            1.23 |
 |   Others       |     0.000 |       43 |       --- |             --- |
-| Signals        |     0.001 |      861 |       --- |             --- |
+| Signals        |     0.001 |      875 |       --- |             --- |
 | I/O            |     0.007 |       34 |       106 |           32.08 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.084 |          |           |                 |
+| Total          |     0.085 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
