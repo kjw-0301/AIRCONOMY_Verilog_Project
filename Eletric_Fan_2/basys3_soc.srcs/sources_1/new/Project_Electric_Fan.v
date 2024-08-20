@@ -421,17 +421,12 @@ module dht11_usonic_duty(
     wire [7:0] humidity, temperature; 
     dht11_cntrl dth11(.clk(clk), .reset_p(reset_p), .dht11_data(dht11_data), .humidity(humidity), .temperature(temperature));
 
-//    wire[15:0] humidity_bcd, temperature_bcd;
-//    bin_to_dec bcd_humi(.bin({4'b0, humidity}),  .bcd(humidity_bcd));
-//    bin_to_dec bcd_temp(.bin({4'b0, temperature}),  .bcd(temperature_bcd));
-
-    wire[7:0] temperature_data; 
-    wire[7:0] humidity_data;
-    assign temperature_data = temperature;
-    assign humidity_data = humidity;
-    reg echo_enable;
+//    wire[7:0] temperature_data; 
+//    wire[7:0] humidity_data;
+//    assign temperature_data = temperature;
+//    assign humidity_data = humidity;
+    //reg echo_enable;
     reg[2:0] ehco_state, ehco_next_state;
-     
     wire [21:0] distance_cm;
     HC_SR04_cntr HC_SR04_cntr_0(.clk(clk), .reset_p(reset_p), .hc_sr04_echo(echo), .hc_sr04_trig(trig), .distance(distance_cm));   
        
@@ -454,8 +449,6 @@ module dht11_usonic_duty(
                     if(8'd24 <= temperature && temperature <= 8'd26) temp_duty = 2'd1;
                     else if(8'd27 <= temperature && temperature <= 8'd29) temp_duty = 2'd2;
                     else if(temperature > 8'd29) begin temp_duty = 2'd3;
-//                    else if(t_data >= 15'd28  h_data >= 15'd25) duty = 2'd2;
-//                    else if(t_data >= 15'd25  h_data >= 15'd25) duty = 2'd1;
                     ehco_next_state = ECHO_OFF;
                     end
                 end
@@ -465,21 +458,13 @@ module dht11_usonic_duty(
                 end
             endcase
         end
-    end
-    
+    end 
     assign duty =( temp_duty && usonic_enable) ? temp_duty : 0;
     
     wire [11:0] distance_cm_bcd;
     bin_to_dec bcd_humi_distance(.bin(distance_cm[11:0]),  .bcd(distance_cm_bcd));
-    
     bin_to_dec bcd_humi_temperature(.bin(temperature),  .bcd(temperature_bcd_out));
     
     assign echo_buffer_out = distance_cm_bcd;
-
     assign led_debug[8] = ehco_state;
-    
     endmodule
-
-
-
-

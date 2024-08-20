@@ -15,28 +15,28 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7540 
-WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:691]
-WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:835]
+INFO: Helper process launched with PID 5592 
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:691]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:835]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 918.871 ; gain = 239.625
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 913.371 ; gain = 239.473
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_module_of_electric_fan' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top_module_of_electric_fan' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:23]
 	Parameter POWER_CONTROL bound to: 4'b0001 
 	Parameter TIMER_CONTROL bound to: 4'b0010 
 	Parameter LED_CONTROL bound to: 4'b0100 
 	Parameter ECHO_CONTROL bound to: 4'b1000 
 	Parameter ROTATION_CONTROL bound to: 4'b0001 
-INFO: [Synth 8-6157] synthesizing module 'button_cntr' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:49]
-INFO: [Synth 8-6157] synthesizing module 'edge_detector_p' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:289]
-INFO: [Synth 8-6155] done synthesizing module 'edge_detector_p' (1#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:289]
-WARNING: [Synth 8-7023] instance 'ed_clk' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'button_cntr' (2#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:49]
-WARNING: [Synth 8-7023] instance 'btn_power_cntr' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:43]
-WARNING: [Synth 8-7023] instance 'btn_timer_cntr' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:44]
-WARNING: [Synth 8-7023] instance 'btn_led_cntr' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:45]
-WARNING: [Synth 8-7023] instance 'btn_echo_cntr' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:46]
-INFO: [Synth 8-6157] synthesizing module 'power_cntr' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:115]
+INFO: [Synth 8-6157] synthesizing module 'button_cntr' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:49]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_p' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:289]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_p' (1#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:289]
+WARNING: [Synth 8-7023] instance 'ed_clk' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'button_cntr' (2#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:49]
+WARNING: [Synth 8-7023] instance 'btn_power_cntr' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:43]
+WARNING: [Synth 8-7023] instance 'btn_timer_cntr' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:44]
+WARNING: [Synth 8-7023] instance 'btn_led_cntr' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:45]
+WARNING: [Synth 8-7023] instance 'btn_echo_cntr' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:46]
+INFO: [Synth 8-6157] synthesizing module 'power_cntr' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:115]
 	Parameter TURN_OFF bound to: 4'b0001 
 	Parameter FIRST_SPEED bound to: 4'b0010 
 	Parameter SECOND_SPEED bound to: 4'b0100 
@@ -45,23 +45,23 @@ INFO: [Synth 8-6157] synthesizing module 'power_cntr' [C:/Users/user/Documents/G
 	Parameter SETTING_5SEC bound to: 4'b0101 
 	Parameter SETTING_10SEC bound to: 4'b1010 
 	Parameter SETTING_15SEC bound to: 4'b1111 
-INFO: [Synth 8-6157] synthesizing module 'clock_div_100' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:23]
-INFO: [Synth 8-6157] synthesizing module 'edge_detector_n' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
-INFO: [Synth 8-6155] done synthesizing module 'edge_detector_n' (3#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'clock_div_100' (4#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:23]
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:192]
-INFO: [Synth 8-6157] synthesizing module 'clock_div_1000' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:47]
-WARNING: [Synth 8-7023] instance 'ed_source' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:56]
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:70]
-INFO: [Synth 8-6155] done synthesizing module 'clock_div_1000' (5#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:47]
-WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:193]
-WARNING: [Synth 8-7023] instance 'sec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:194]
-INFO: [Synth 8-6155] done synthesizing module 'power_cntr' (6#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:115]
-INFO: [Synth 8-6157] synthesizing module 'dht11_usonic_duty' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:405]
+INFO: [Synth 8-6157] synthesizing module 'clock_div_100' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:23]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_n' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_n' (3#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:311]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_100' (4#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:23]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:192]
+INFO: [Synth 8-6157] synthesizing module 'clock_div_1000' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:47]
+WARNING: [Synth 8-7023] instance 'ed_source' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:56]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_1000' (5#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:47]
+WARNING: [Synth 8-7023] instance 'msec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:193]
+WARNING: [Synth 8-7023] instance 'sec_clk' of module 'clock_div_1000' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'power_cntr' (6#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:115]
+INFO: [Synth 8-6157] synthesizing module 'dht11_usonic_duty' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:405]
 	Parameter ECHO_ON bound to: 2'b01 
 	Parameter ECHO_OFF bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'dht11_cntrl' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:337]
+INFO: [Synth 8-6157] synthesizing module 'dht11_cntrl' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:337]
 	Parameter S_IDLE bound to: 6'b000001 
 	Parameter S_LOW_18MS bound to: 6'b000010 
 	Parameter S_HIGH_20US bound to: 6'b000100 
@@ -70,77 +70,77 @@ INFO: [Synth 8-6157] synthesizing module 'dht11_cntrl' [C:/Users/user/Documents/
 	Parameter S_READ_DATA bound to: 6'b100000 
 	Parameter S_WAIT_PEDGE bound to: 2'b01 
 	Parameter S_WAIT_NEDGE bound to: 2'b10 
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:359]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:467]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:397]
-WARNING: [Synth 8-5788] Register dht11_buffer_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:378]
-WARNING: [Synth 8-5788] Register humidity_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:498]
-WARNING: [Synth 8-5788] Register temperature_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:499]
-INFO: [Synth 8-6155] done synthesizing module 'dht11_cntrl' (7#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:337]
-WARNING: [Synth 8-7023] instance 'dth11' of module 'dht11_cntrl' has 6 connections declared, but only 5 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:422]
-INFO: [Synth 8-6157] synthesizing module 'HC_SR04_cntr' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:683]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:359]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:467]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:397]
+WARNING: [Synth 8-5788] Register dht11_buffer_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:378]
+WARNING: [Synth 8-5788] Register humidity_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:498]
+WARNING: [Synth 8-5788] Register temperature_reg in module dht11_cntrl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:499]
+INFO: [Synth 8-6155] done synthesizing module 'dht11_cntrl' (7#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:337]
+WARNING: [Synth 8-7023] instance 'dth11' of module 'dht11_cntrl' has 6 connections declared, but only 5 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:422]
+INFO: [Synth 8-6157] synthesizing module 'HC_SR04_cntr' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:683]
 	Parameter S_IDLE bound to: 4'b0001 
 	Parameter S_10US_TTL bound to: 4'b0010 
 	Parameter S_WAIT_PEDGE bound to: 4'b0100 
 	Parameter S_CALC_DIST bound to: 4'b1000 
-WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:710]
-INFO: [Synth 8-6157] synthesizing module 'sr04_div_58' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:320]
-INFO: [Synth 8-6155] done synthesizing module 'sr04_div_58' (8#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:320]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:744]
-WARNING: [Synth 8-5788] Register hc_sr04_trig_reg in module HC_SR04_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:748]
-WARNING: [Synth 8-5788] Register distance_reg in module HC_SR04_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:782]
-INFO: [Synth 8-6155] done synthesizing module 'HC_SR04_cntr' (9#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:683]
-WARNING: [Synth 8-7023] instance 'HC_SR04_cntr_0' of module 'HC_SR04_cntr' has 6 connections declared, but only 5 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:436]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:452]
-INFO: [Synth 8-6157] synthesizing module 'bin_to_dec' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:382]
-INFO: [Synth 8-6155] done synthesizing module 'bin_to_dec' (10#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:382]
-WARNING: [Synth 8-689] width (12) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:473]
-WARNING: [Synth 8-689] width (12) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:475]
-WARNING: [Synth 8-3848] Net t_data_out in module/entity dht11_usonic_duty does not have driver. [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:412]
-INFO: [Synth 8-6155] done synthesizing module 'dht11_usonic_duty' (11#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:405]
-WARNING: [Synth 8-689] width (16) of port connection 't_data_out' does not match port width (1) of module 'dht11_usonic_duty' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:80]
-WARNING: [Synth 8-689] width (1) of port connection 'led_debug' does not match port width (4) of module 'dht11_usonic_duty' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:81]
-INFO: [Synth 8-6157] synthesizing module 'pwm_cntr' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:275]
+WARNING: [Synth 8-7023] instance 'usec_clk' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:710]
+INFO: [Synth 8-6157] synthesizing module 'sr04_div_58' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:320]
+INFO: [Synth 8-6155] done synthesizing module 'sr04_div_58' (8#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/clock_library.v:320]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:744]
+WARNING: [Synth 8-5788] Register hc_sr04_trig_reg in module HC_SR04_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:748]
+WARNING: [Synth 8-5788] Register distance_reg in module HC_SR04_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:782]
+INFO: [Synth 8-6155] done synthesizing module 'HC_SR04_cntr' (9#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:683]
+WARNING: [Synth 8-7023] instance 'HC_SR04_cntr_0' of module 'HC_SR04_cntr' has 6 connections declared, but only 5 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:431]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:447]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_dec' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:382]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_dec' (10#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:382]
+WARNING: [Synth 8-689] width (12) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:465]
+WARNING: [Synth 8-689] width (12) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:466]
+WARNING: [Synth 8-3848] Net t_data_out in module/entity dht11_usonic_duty does not have driver. [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:412]
+INFO: [Synth 8-6155] done synthesizing module 'dht11_usonic_duty' (11#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:405]
+WARNING: [Synth 8-689] width (16) of port connection 't_data_out' does not match port width (1) of module 'dht11_usonic_duty' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:80]
+WARNING: [Synth 8-689] width (1) of port connection 'led_debug' does not match port width (4) of module 'dht11_usonic_duty' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:81]
+INFO: [Synth 8-6157] synthesizing module 'pwm_cntr' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:275]
 	Parameter sys_clk bound to: 100000000 - type: integer 
 	Parameter pwm_freq bound to: 100 - type: integer 
 	Parameter duty_step bound to: 4 - type: integer 
 	Parameter temp bound to: 250000 - type: integer 
 	Parameter temp_half bound to: 125000 - type: integer 
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:304]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr' (12#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:275]
-INFO: [Synth 8-6157] synthesizing module 'fan_led' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:364]
-INFO: [Synth 8-6157] synthesizing module 'pwm_100step' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:916]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:304]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_cntr' (12#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:275]
+INFO: [Synth 8-6157] synthesizing module 'fan_led' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:364]
+INFO: [Synth 8-6157] synthesizing module 'pwm_100step' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:916]
 	Parameter sys_clk bound to: 100000000 - type: integer 
 	Parameter pwm_freq bound to: 10000 - type: integer 
 	Parameter duty_step bound to: 100 - type: integer 
 	Parameter temp bound to: 100 - type: integer 
 	Parameter temp_half bound to: 50 - type: integer 
-WARNING: [Synth 8-7023] instance 'edge_detector_0' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:944]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_100step' (13#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:916]
-WARNING: [Synth 8-689] width (7) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:394]
-INFO: [Synth 8-6157] synthesizing module 'fnd_cntr' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:22]
-INFO: [Synth 8-6157] synthesizing module 'ring_counter_fnd' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:278]
-INFO: [Synth 8-6155] done synthesizing module 'ring_counter_fnd' (14#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:32]
-INFO: [Synth 8-6157] synthesizing module 'decoder_7seg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:261]
-INFO: [Synth 8-6155] done synthesizing module 'decoder_7seg' (15#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:261]
-INFO: [Synth 8-6155] done synthesizing module 'fnd_cntr' (16#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'fan_led' (17#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:364]
-WARNING: [Synth 8-7023] instance 'blue_led' of module 'fan_led' has 7 connections declared, but only 5 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:90]
-INFO: [Synth 8-6157] synthesizing module 'rotation_cntr' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:322]
-WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:333]
-INFO: [Synth 8-6157] synthesizing module 'pwm_Nstep_freq' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:968]
+WARNING: [Synth 8-7023] instance 'edge_detector_0' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:944]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_100step' (13#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:916]
+WARNING: [Synth 8-689] width (7) of port connection 'bcd' does not match port width (16) of module 'bin_to_dec' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:394]
+INFO: [Synth 8-6157] synthesizing module 'fnd_cntr' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ring_counter_fnd' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:278]
+INFO: [Synth 8-6155] done synthesizing module 'ring_counter_fnd' (14#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:270]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:32]
+INFO: [Synth 8-6157] synthesizing module 'decoder_7seg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_7seg' (15#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam01_combinational_logic.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_cntr' (16#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'fan_led' (17#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:364]
+WARNING: [Synth 8-7023] instance 'blue_led' of module 'fan_led' has 7 connections declared, but only 5 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:90]
+INFO: [Synth 8-6157] synthesizing module 'rotation_cntr' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:322]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:333]
+INFO: [Synth 8-6157] synthesizing module 'pwm_Nstep_freq' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:968]
 	Parameter sys_clk bound to: 100000000 - type: integer 
 	Parameter pwm_freq bound to: 50 - type: integer 
 	Parameter duty_step bound to: 600 - type: integer 
 	Parameter temp bound to: 3333 - type: integer 
 	Parameter temp_half bound to: 1666 - type: integer 
-WARNING: [Synth 8-7023] instance 'edge_detector_0' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:995]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_Nstep_freq' (18#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:968]
-WARNING: [Synth 8-5788] Register down_up_reg in module rotation_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:346]
-INFO: [Synth 8-6155] done synthesizing module 'rotation_cntr' (19#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:322]
-INFO: [Synth 8-6155] done synthesizing module 'top_module_of_electric_fan' (20#1) [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:23]
+WARNING: [Synth 8-7023] instance 'edge_detector_0' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:995]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_Nstep_freq' (18#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/controler.v:968]
+WARNING: [Synth 8-5788] Register down_up_reg in module rotation_cntr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'rotation_cntr' (19#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:322]
+INFO: [Synth 8-6155] done synthesizing module 'top_module_of_electric_fan' (20#1) [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:23]
 WARNING: [Synth 8-3331] design HC_SR04_cntr has unconnected port led_debug[7]
 WARNING: [Synth 8-3331] design HC_SR04_cntr has unconnected port led_debug[6]
 WARNING: [Synth 8-3331] design HC_SR04_cntr has unconnected port led_debug[5]
@@ -160,7 +160,7 @@ WARNING: [Synth 8-3331] design dht11_usonic_duty has unconnected port led_debug[
 WARNING: [Synth 8-3331] design dht11_usonic_duty has unconnected port led_debug[11]
 WARNING: [Synth 8-3331] design dht11_usonic_duty has unconnected port t_data_out
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 971.719 ; gain = 292.473
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 966.980 ; gain = 293.082
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -173,44 +173,44 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 971.719 ; gain = 292.473
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 969.855 ; gain = 295.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 971.719 ; gain = 292.473
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 969.855 ; gain = 295.957
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 971.719 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.042 . Memory (MB): peak = 969.855 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
-Finished Parsing XDC File [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_of_electric_fan_propImpl.xdc].
+Parsing XDC File [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
+Finished Parsing XDC File [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/constrs_1/imports/verilog/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_of_electric_fan_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_of_electric_fan_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1091.152 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1100.828 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1091.152 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1100.828 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1091.152 ; gain = 411.906
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1100.828 ; gain = 426.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1091.152 ; gain = 411.906
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1100.828 ; gain = 426.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1091.152 ; gain = 411.906
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1100.828 ; gain = 426.930
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:346]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/Project_Electric_Fan.v:346]
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'top_module_of_electric_fan'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -221,7 +221,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'top_module_of_electric_fan'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1091.152 ; gain = 411.906
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1100.828 ; gain = 426.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -236,8 +236,8 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     10 Bit       Adders := 2     
 	   4 Input      8 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 5     
-	   2 Input      6 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 101   
 	   2 Input      3 Bit       Adders := 4     
 +---Registers : 
@@ -245,8 +245,8 @@ Detailed RTL Component Info :
 	               22 Bit    Registers := 1     
 	               10 Bit    Registers := 2     
 	                8 Bit    Registers := 2     
-	                7 Bit    Registers := 7     
-	                6 Bit    Registers := 5     
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 4     
 	                4 Bit    Registers := 11    
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 3     
@@ -256,8 +256,8 @@ Detailed RTL Component Info :
 	   3 Input     40 Bit        Muxes := 6     
 	   2 Input     16 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 2     
-	   2 Input      7 Bit        Muxes := 4     
-	   2 Input      6 Bit        Muxes := 7     
+	   2 Input      7 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 6     
 	   3 Input      6 Bit        Muxes := 2     
 	   2 Input      5 Bit        Muxes := 1     
 	   6 Input      4 Bit        Muxes := 3     
@@ -422,11 +422,11 @@ Detailed RTL Component Info :
 Module fan_led 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      6 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
-	                6 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
 Module rotation_cntr 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -452,16 +452,16 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_cur_reg' into 'usec_clk/ed/ff_cur_reg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
-INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_old_reg' into 'usec_clk/ed/ff_old_reg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
-INFO: [Synth 8-4471] merging register 'sec_clk/ed_source/ff_cur_reg' into 'msec_clk/ed/ff_cur_reg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
-INFO: [Synth 8-4471] merging register 'sec_clk/ed_source/ff_old_reg' into 'msec_clk/ed/ff_old_reg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
-INFO: [Synth 8-4471] merging register 'btn_timer_cntr/ed_clk/ff_cur_reg' into 'btn_power_cntr/ed_clk/ff_cur_reg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
-INFO: [Synth 8-4471] merging register 'btn_led_cntr/ed_clk/ff_cur_reg' into 'btn_power_cntr/ed_clk/ff_cur_reg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
-INFO: [Synth 8-4471] merging register 'btn_echo_cntr/ed_clk/ff_cur_reg' into 'btn_power_cntr/ed_clk/ff_cur_reg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
-INFO: [Synth 8-4471] merging register 'btn_timer_cntr/ed_clk/ff_old_reg' into 'btn_power_cntr/ed_clk/ff_old_reg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
-INFO: [Synth 8-4471] merging register 'btn_led_cntr/ed_clk/ff_old_reg' into 'btn_power_cntr/ed_clk/ff_old_reg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
-INFO: [Synth 8-4471] merging register 'btn_echo_cntr/ed_clk/ff_old_reg' into 'btn_power_cntr/ed_clk/ff_old_reg' [C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_cur_reg' into 'usec_clk/ed/ff_cur_reg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
+INFO: [Synth 8-4471] merging register 'msec_clk/ed_source/ff_old_reg' into 'usec_clk/ed/ff_old_reg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
+INFO: [Synth 8-4471] merging register 'sec_clk/ed_source/ff_cur_reg' into 'msec_clk/ed/ff_cur_reg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:319]
+INFO: [Synth 8-4471] merging register 'sec_clk/ed_source/ff_old_reg' into 'msec_clk/ed/ff_old_reg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:320]
+INFO: [Synth 8-4471] merging register 'btn_timer_cntr/ed_clk/ff_cur_reg' into 'btn_power_cntr/ed_clk/ff_cur_reg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
+INFO: [Synth 8-4471] merging register 'btn_led_cntr/ed_clk/ff_cur_reg' into 'btn_power_cntr/ed_clk/ff_cur_reg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
+INFO: [Synth 8-4471] merging register 'btn_echo_cntr/ed_clk/ff_cur_reg' into 'btn_power_cntr/ed_clk/ff_cur_reg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:297]
+INFO: [Synth 8-4471] merging register 'btn_timer_cntr/ed_clk/ff_old_reg' into 'btn_power_cntr/ed_clk/ff_old_reg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
+INFO: [Synth 8-4471] merging register 'btn_led_cntr/ed_clk/ff_old_reg' into 'btn_power_cntr/ed_clk/ff_old_reg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
+INFO: [Synth 8-4471] merging register 'btn_echo_cntr/ed_clk/ff_old_reg' into 'btn_power_cntr/ed_clk/ff_old_reg' [C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.srcs/sources_1/new/exam02_sequential_logic.v:298]
 WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[15]
 WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[14]
 WARNING: [Synth 8-3331] design dht11_cntrl has unconnected port led_debug[13]
@@ -510,7 +510,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\current_
 INFO: [Synth 8-3886] merging instance 'power_cntr_0/timer_state_reg[0]' (FDCE) to 'power_cntr_0/timer_state_reg[2]'
 INFO: [Synth 8-3886] merging instance 'power_cntr_0/timer_state_reg[1]' (FDCE) to 'power_cntr_0/timer_state_reg[3]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1091.152 ; gain = 411.906
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1100.828 ; gain = 426.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -522,13 +522,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1091.152 ; gain = 411.906
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1100.828 ; gain = 426.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1139.602 ; gain = 460.355
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1133.258 ; gain = 459.359
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -540,7 +540,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1140.641 ; gain = 461.395
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1134.273 ; gain = 460.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -564,13 +564,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1144.477 ; gain = 465.230
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1137.031 ; gain = 463.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1144.477 ; gain = 465.230
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1137.031 ; gain = 463.133
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -589,25 +589,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1144.477 ; gain = 465.230
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1137.031 ; gain = 463.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1144.477 ; gain = 465.230
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1137.031 ; gain = 463.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1144.477 ; gain = 465.230
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1137.031 ; gain = 463.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1144.477 ; gain = 465.230
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1137.031 ; gain = 463.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -625,13 +625,13 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |   121|
-|3     |LUT1   |    19|
-|4     |LUT2   |   450|
-|5     |LUT3   |    66|
-|6     |LUT4   |   115|
-|7     |LUT5   |    60|
-|8     |LUT6   |   130|
-|9     |FDCE   |   404|
+|3     |LUT1   |    17|
+|4     |LUT2   |   453|
+|5     |LUT3   |    75|
+|6     |LUT4   |   114|
+|7     |LUT5   |    63|
+|8     |LUT6   |   136|
+|9     |FDCE   |   407|
 |10    |FDPE   |    19|
 |11    |FDRE   |    85|
 |12    |IBUF   |     8|
@@ -644,60 +644,60 @@ Report Instance Areas:
 +------+----------------------+-------------------+------+
 |      |Instance              |Module             |Cells |
 +------+----------------------+-------------------+------+
-|1     |top                   |                   |  1504|
-|2     |  blue_led            |fan_led            |   168|
-|3     |    led_b             |pwm_100step        |   156|
+|1     |top                   |                   |  1525|
+|2     |  blue_led            |fan_led            |   180|
+|3     |    led_b             |pwm_100step        |   159|
 |4     |      edge_detector_0 |edge_detector_n_20 |     3|
-|5     |  btn_echo_cntr       |button_cntr        |     5|
-|6     |    ed_btn            |edge_detector_p_19 |     4|
+|5     |  btn_echo_cntr       |button_cntr        |     3|
+|6     |    ed_btn            |edge_detector_p_19 |     2|
 |7     |  btn_led_cntr        |button_cntr_0      |     4|
 |8     |    ed_btn            |edge_detector_p_18 |     3|
-|9     |  btn_power_cntr      |button_cntr_1      |    30|
-|10    |    ed_btn            |edge_detector_p_16 |     3|
+|9     |  btn_power_cntr      |button_cntr_1      |    32|
+|10    |    ed_btn            |edge_detector_p_16 |     5|
 |11    |    ed_clk            |edge_detector_p_17 |     3|
 |12    |  btn_timer_cntr      |button_cntr_2      |     4|
 |13    |    ed_btn            |edge_detector_p_15 |     3|
-|14    |  control_pwm         |pwm_cntr           |   259|
+|14    |  control_pwm         |pwm_cntr           |   260|
 |15    |    ed                |edge_detector_p_14 |     6|
-|16    |  fnd                 |fnd_cntr           |    48|
+|16    |  fnd                 |fnd_cntr           |    46|
 |17    |    nolabel_line40    |decoder_7seg       |     7|
-|18    |    rc                |ring_counter_fnd   |    36|
+|18    |    rc                |ring_counter_fnd   |    34|
 |19    |      ed              |edge_detector_p_13 |     3|
 |20    |  nolabel_line110     |rotation_cntr      |   332|
 |21    |    ed                |edge_detector_n_11 |     5|
 |22    |    pwm_rotation      |pwm_Nstep_freq     |   263|
 |23    |      edge_detector_0 |edge_detector_n_12 |     3|
-|24    |  nolabel_line80      |dht11_usonic_duty  |   488|
-|25    |    HC_SR04_cntr_0    |HC_SR04_cntr       |   176|
+|24    |  nolabel_line80      |dht11_usonic_duty  |   497|
+|25    |    HC_SR04_cntr_0    |HC_SR04_cntr       |   175|
 |26    |      clk_div_58      |sr04_div_58        |    24|
 |27    |      edge_detector_0 |edge_detector_p_8  |     9|
 |28    |      usec_clk        |clock_div_100_9    |    72|
 |29    |        ed            |edge_detector_n_10 |    56|
-|30    |    dth11             |dht11_cntrl        |   304|
-|31    |      ed              |edge_detector_p    |   103|
+|30    |    dth11             |dht11_cntrl        |   314|
+|31    |      ed              |edge_detector_p    |   114|
 |32    |      usec_clk        |clock_div_100_6    |    49|
 |33    |        ed            |edge_detector_n_7  |    33|
-|34    |  power_cntr_0        |power_cntr         |   127|
+|34    |  power_cntr_0        |power_cntr         |   128|
 |35    |    msec_clk          |clock_div_1000     |    29|
 |36    |      ed              |edge_detector_n_5  |     5|
-|37    |    sec_clk           |clock_div_1000_3   |    28|
+|37    |    sec_clk           |clock_div_1000_3   |    30|
 |38    |      ed              |edge_detector_n_4  |     5|
 |39    |    usec_clk          |clock_div_100      |    20|
 |40    |      ed              |edge_detector_n    |     4|
 +------+----------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1144.477 ; gain = 465.230
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1137.031 ; gain = 463.133
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1144.477 ; gain = 345.797
-Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1144.477 ; gain = 465.230
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1137.031 ; gain = 332.160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1137.031 ; gain = 463.133
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1156.504 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1146.051 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 122 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1156.504 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1146.051 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
@@ -705,10 +705,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 103 Infos, 67 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1156.504 ; gain = 769.867
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1156.504 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1146.051 ; gain = 763.441
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1146.051 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/top_module_of_electric_fan.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/minkyu/Documents/GitHub/AIRCONOMY_Verilog_Project/Eletric_Fan_2/basys3_soc.runs/synth_1/top_module_of_electric_fan.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_module_of_electric_fan_utilization_synth.rpt -pb top_module_of_electric_fan_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 19:03:51 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 08:49:13 2024...
